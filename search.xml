@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Hexo搭建Next进行美化详解</title>
+      <link href="/2020/06/28/Hexo%E6%90%AD%E5%BB%BANext%E8%BF%9B%E8%A1%8C%E7%BE%8E%E5%8C%96%E8%AF%A6%E8%A7%A3/"/>
+      <url>/2020/06/28/Hexo%E6%90%AD%E5%BB%BANext%E8%BF%9B%E8%A1%8C%E7%BE%8E%E5%8C%96%E8%AF%A6%E8%A7%A3/</url>
+      
+        <content type="html"><![CDATA[<p> 前提是已经安装Node.js 、Git 和Hexo以及注册Github账户；</p><p>安装流程可见：<a href="https://blog.csdn.net/qq_36759224/article/details/82121420" target="_blank" rel="noopener">使用 Github Pages 和 Hexo 搭建自己的独立博客【超级详细的小白教程】</a></p><p>这个md是我在学习哔哩哔哩的视频中所做的笔记，贴下链接：</p><p><a href="https://www.bilibili.com/video/BV16W411t7mq?p=10" target="_blank" rel="noopener">使用Hexo博客搭建的个人博客，使用Next主题来进行优化改造</a></p><h1 id="1、Next主题的启用"><a href="#1、Next主题的启用" class="headerlink" title="1、Next主题的启用"></a>1、Next主题的启用</h1><p>在Hexo下面的themes中，右键 选择Git base here</p><p>复制这行代码</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;theme-next&#x2F;hexo-theme-next themes&#x2F;next</span><br></pre></td></tr></table></figure><p>等待完成后，打开Hexo的这个文件</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200628135626463.png" alt="image-20200628135626463"></p><p>找到 theme</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200628135105789.png" alt="image-20200628135105789"></p><p>把 theme 后面的 landscape 改成 next 即可；</p><p>然后在Hexo文件夹中 右键 Git base here</p><p>输入以下命令，启动本地预览</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200628135424948.png" alt="image-20200628135424948"></p><p>出现下面两个INFO表示成功，在浏览器中进入<a href="http://localhost:4000进行查看；">http://localhost:4000进行查看；</a></p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200628135511979.png" alt="image-20200628135511979"></p><p>查看后需要关闭的话 则要在命令行输入Ctrl + c 结束；</p><p>这样 next主题就启动成功了；</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Github </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+            <tag> Next </tag>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Github的使用及博客的美化</title>
       <link href="/2020/06/28/Github%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%BE%8E%E5%8C%96/"/>
       <url>/2020/06/28/Github%E7%9A%84%E4%BD%BF%E7%94%A8%E5%8F%8A%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%BE%8E%E5%8C%96/</url>
@@ -32,7 +61,7 @@
       
       <categories>
           
-          <category> life </category>
+          <category> Life </category>
           
       </categories>
       
