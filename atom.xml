@@ -60,9 +60,9 @@
     
       <category term="Github" scheme="http://yoursite.com/tags/Github/"/>
     
-      <category term="Next" scheme="http://yoursite.com/tags/Next/"/>
-    
       <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
+    
+      <category term="Next" scheme="http://yoursite.com/tags/Next/"/>
     
   </entry>
   
