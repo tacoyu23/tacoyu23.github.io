@@ -21,20 +21,25 @@
     var CONFIG = {"hostname":"tacoyu23.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":240,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="定方向，待联系导师">
+  <meta name="description" content="深入了解位运算并使用它解决问题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="计算机方向及导师选择有感">
-<meta property="og:url" content="http://tacoyu23.github.io/2020/06/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%96%B9%E5%90%91%E5%8F%8A%E5%AF%BC%E5%B8%88%E9%80%89%E6%8B%A9%E6%9C%89%E6%84%9F/index.html">
+<meta property="og:title" content="位运算的巧妙之处">
+<meta property="og:url" content="http://tacoyu23.github.io/2020/06/30/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%9A%84%E5%B7%A7%E5%A6%99%E4%B9%8B%E5%A4%84/index.html">
 <meta property="og:site_name" content="tacoyu&#39;Blog">
-<meta property="og:description" content="定方向，待联系导师">
+<meta property="og:description" content="深入了解位运算并使用它解决问题">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-06-29T11:03:15.000Z">
-<meta property="article:modified_time" content="2020-06-30T01:55:11.444Z">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL0NBQ0E3QjlEOTBFNEI3MEFFMUE0RTE1RUI2RkY4RENCLnBuZw?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL0UwOTA3MzlDMkFEQzIwN0Q2OTEzMTBDRUZBMDQ0NzM5LnBuZw?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nLzA2N0M4MUQ0RTkzRTQwMDY1REZEODU4M0VGOTYxQkVBLnBuZw?x-oss-process=image/format,png">
+<meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nLzA0NDlCNzNDOTc1QzE5MkE1OUIzREU1OTBEQzAyODNDLnBuZw?x-oss-process=image/format,png">
+<meta property="article:published_time" content="2020-06-30T05:59:59.000Z">
+<meta property="article:modified_time" content="2020-06-30T06:01:45.141Z">
 <meta property="article:author" content="Mr.L">
-<meta property="article:tag" content="记录">
+<meta property="article:tag" content="Bit">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL0NBQ0E3QjlEOTBFNEI3MEFFMUE0RTE1RUI2RkY4RENCLnBuZw?x-oss-process=image/format,png">
 
-<link rel="canonical" href="http://tacoyu23.github.io/2020/06/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%96%B9%E5%90%91%E5%8F%8A%E5%AF%BC%E5%B8%88%E9%80%89%E6%8B%A9%E6%9C%89%E6%84%9F/">
+<link rel="canonical" href="http://tacoyu23.github.io/2020/06/30/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%9A%84%E5%B7%A7%E5%A6%99%E4%B9%8B%E5%A4%84/">
 
 
 <script id="page-configurations">
@@ -47,7 +52,7 @@
   };
 </script>
 
-  <title>计算机方向及导师选择有感 | tacoyu'Blog</title>
+  <title>位运算的巧妙之处 | tacoyu'Blog</title>
   
 
 
@@ -203,7 +208,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://tacoyu23.github.io/2020/06/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%96%B9%E5%90%91%E5%8F%8A%E5%AF%BC%E5%B8%88%E9%80%89%E6%8B%A9%E6%9C%89%E6%84%9F/">
+    <link itemprop="mainEntityOfPage" href="http://tacoyu23.github.io/2020/06/30/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%9A%84%E5%B7%A7%E5%A6%99%E4%B9%8B%E5%A4%84/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/未标题-1.png">
@@ -216,15 +221,15 @@
     </span>
 
     <span class="fa fa-file-word" title="post.wordcount">
-    字数统计 :  742 字 |
+    字数统计 :  935 字 |
     </span>
 
     <span class="fa fa-clock" title="post.min2read">
-    阅读时长 ≈ 2 分钟
+    阅读时长 ≈ 3 分钟
  	</span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          计算机方向及导师选择有感
+          位运算的巧妙之处
         </h1>
 
         <div class="post-meta">
@@ -234,14 +239,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2020-06-29 19:03:15" itemprop="dateCreated datePublished" datetime="2020-06-29T19:03:15+08:00">2020-06-29</time>
+              <time title="创建时间：2020-06-30 13:59:59" itemprop="dateCreated datePublished" datetime="2020-06-30T13:59:59+08:00">2020-06-30</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-30 09:55:11" itemprop="dateModified" datetime="2020-06-30T09:55:11+08:00">2020-06-30</time>
+                <time title="修改时间：2020-06-30 14:01:45" itemprop="dateModified" datetime="2020-06-30T14:01:45+08:00">2020-06-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -249,7 +254,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Privacy/" itemprop="url" rel="index"><span itemprop="name">Privacy</span></a>
+                  <a href="/categories/Algorithm/" itemprop="url" rel="index"><span itemprop="name">Algorithm</span></a>
                 </span>
             </span>
 
@@ -269,13 +274,13 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2020/06/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%96%B9%E5%90%91%E5%8F%8A%E5%AF%BC%E5%B8%88%E9%80%89%E6%8B%A9%E6%9C%89%E6%84%9F/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2020/06/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%96%B9%E5%90%91%E5%8F%8A%E5%AF%BC%E5%B8%88%E9%80%89%E6%8B%A9%E6%9C%89%E6%84%9F/" itemprop="commentCount"></span>
+    <a title="valine" href="/2020/06/30/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%9A%84%E5%B7%A7%E5%A6%99%E4%B9%8B%E5%A4%84/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/06/30/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%9A%84%E5%B7%A7%E5%A6%99%E4%B9%8B%E5%A4%84/" itemprop="commentCount"></span>
     </a>
   </span>
   
   
-            <div class="post-description">定方向，待联系导师</div>
+            <div class="post-description">深入了解位运算并使用它解决问题</div>
 
         </div>
       </header>
@@ -286,17 +291,73 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>​    正常的话，初试成绩出来后就要联系并确定导师，拟录取后得到导师指点，适应研究生生活；但由于一些阻碍（前几个老师名额都满了，后两个老师的名额没确定下来，暂时无法答复我），导师和方向的问题迟迟没有解决，也是我一直打着等老师回复的幌子拖着这个事。</p>
-<p>​    索性今天就把方向给定了，根据方向去联系导师，本来导师又多，我也不认识，学长学姐也没有参考性的建议，只能排除一些雷硬冲了；</p>
-<p>​    就我而言，喜欢一些有挑战的东西，但常常因为不够自信而不去尝试，这次就冲一把；搜了一些资料，也看了一些论坛帖子，对以下几个方向有了一些理解：</p>
-<p>​    <strong>人工智能/机器学习/深度学习</strong>：存在着分支关系的这三个方向，需要很好的数学功底，算法功底；读研期间处理模型的时候，需要往复的调参数，越熟练调得越快；而数学到了一定的高度后，就是靠天赋了；所以，这是一个极具有挑战的方向；</p>
-<p>毕业后，工作一般是算法岗位、算法工程师，薪资待遇好；纯算法方向（对模型创新）比较吃学历、吃赛奖、吃顶会，工程方向（将现有模型变成落地项目）的话门槛要求相对低点；</p>
-<p>其中的自然语言处理(<strong>NLP</strong>)和计算机视觉(<strong>CV</strong>)属于比较火热的方向，但CV由于人数多、落地少，NLP相对来说比较受青睐，但目前基本就大厂设了，进大厂难，小厂如果有的话，则进去相对容易一些，在以后的话应该有一个好的发展；</p>
-<p>在我看来，<strong>智能推荐</strong>的领域应该比NLP的宽，并且感觉覆盖面更广一些，不知道就业形势会不会好点；</p>
-<p>​    <strong>大数据</strong>：大数据的方向大体有开发和分析两种，主要以java为主吧，python也有；大数据薪资也算可以，就业不错，应该算是主流方向吧；</p>
-<p>​    <strong>开发岗位</strong>：这个不算是研究方向，但是就业的一个很好的指南针；学好Java，步入开发岗位，岗位多，薪资过得去，避坑机器学习，也是大多数程序员的选择吧；</p>
-<p>所以，读研期间就以<strong>优先NLP/推荐系统，然后机器学习/深度学习，其次大数据相关方向</strong>吧，毕竟很多东西都没真正接触过，也不知道自己真正喜欢什么，想要什么；课后就自己学学java开发，凡事留条后路；</p>
-<p>最近国家还投了2000亿在电子产业上，估计通信电子行业在几年内会持续上升吧；</p>
+        <h1 id="位运算的巧妙之处"><a href="#位运算的巧妙之处" class="headerlink" title="位运算的巧妙之处"></a>位运算的巧妙之处</h1><p>算法中，位运算可以巧妙运用在一下几个方面：</p>
+<p>1、判断奇偶数  =&gt;  x&amp;1</p>
+<p>2、判断数x中第k ( 从右至左 ) 位是1还是0  </p>
+<pre><code>法1：( x &gt;&gt; ( k - 1 ) ) &amp; 1
+
+![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nLzIwMjAwNTE4MjEyNDI0LnBuZw?x-oss-process=image/format,png)
+
+法2：x &amp; ( 1 &lt;&lt; ( k - 1 ) )</code></pre><p>3、交换两个整数变量 a , b 的值</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = a ^ b;</span><br><span class="line">b = b ^ a;</span><br><span class="line">a = a ^ b;</span><br></pre></td></tr></table></figure>
+
+<p>这里为什么能这样做，在后面的异或运算中会说明；</p>
+<p>4、不用判断语句，求整数绝对值</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> (value ^ (value &gt;&gt; <span class="number">31</span>))-(value &gt;&gt;<span class="number">31</span>)</span><br></pre></td></tr></table></figure>
+
+<p>同样在异或运算中说明；</p>
+<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><h3 id="二进制中1的个数"><a href="#二进制中1的个数" class="headerlink" title="二进制中1的个数"></a>二进制中1的个数</h3><p><strong>描述</strong>：实现一个函数，输入一个正整数，输出该数二进制表示中1的个数。</p>
+<p>例：9的二进制表示为1001，有2位是1；</p>
+<p><strong>思路</strong>：循环运用判断x的第k位是否为1的方法；</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL0NBQ0E3QjlEOTBFNEI3MEFFMUE0RTE1RUI2RkY4RENCLnBuZw?x-oss-process=image/format,png" alt=""></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> count=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span>(value)</span><br><span class="line">&#123;	</span><br><span class="line">	count += value &amp; <span class="number">1</span>;</span><br><span class="line">	value = value &gt;&gt; <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> count;</span><br></pre></td></tr></table></figure>
+
+<p>方法二：</p>
+<p>&amp;运算有这样一个性质：a = ( a - 1 ) &amp; a ； 这样a就能<strong>消除最低位的一个1</strong>；</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL0UwOTA3MzlDMkFEQzIwN0Q2OTEzMTBDRUZBMDQ0NzM5LnBuZw?x-oss-process=image/format,png" alt=""></p>
+<p>思路：利用这一性质，我们可以每次将value-1，然后与自己&amp;，能做多少次这样的操作就说明有多少个1；</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> count=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span>(value)</span><br><span class="line">&#123;</span><br><span class="line">	value = (value - <span class="number">1</span>) &amp; value;</span><br><span class="line">	count++;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> count;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="异或运算的巧妙之处"><a href="#异或运算的巧妙之处" class="headerlink" title="异或运算的巧妙之处"></a>异或运算的巧妙之处</h1><h2 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h2><p>异或又称不进位加法，两个数相异或，对应位相同则为0，不同则为1；</p>
+<p>具有以下性质：</p>
+<p>1、a ^ a = 0；</p>
+<p>2、0 ^ a = a；</p>
+<p>3、异或具有交换律和结合律</p>
+<pre><code>b ^ c = c ^ b；
+
+a ^ b ^ c = a ^ ( b ^ c) = ( a ^ b ) ^ c；</code></pre><p>4、( -1 ) ^ a =！a;</p>
+<h2 id="应用-1"><a href="#应用-1" class="headerlink" title="应用"></a>应用</h2><h3 id="交换两个变量的值"><a href="#交换两个变量的值" class="headerlink" title="交换两个变量的值"></a>交换两个变量的值</h3><p>交换变量a,b的值</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = a ^ b;</span><br><span class="line">b = b ^ a;</span><br><span class="line">a = a ^ b;</span><br></pre></td></tr></table></figure>
+
+<p>利用异或运算的交换律和结合律，可以得到如下：</p>
+<p>1、a = a ^ b;</p>
+<p>2、b = b ^ a;</p>
+<p>把1式代入2式中，此时 b = b ^ ( a ^ b ) ，则 b = b ^ b ^ a = a;</p>
+<p>3、a = a ^ b;</p>
+<p>将1式和 b = a 代入3式，则 a = a ^ b ^ a = b;</p>
+<h3 id="不用判断语句，求整数绝对值"><a href="#不用判断语句，求整数绝对值" class="headerlink" title="不用判断语句，求整数绝对值"></a>不用判断语句，求整数绝对值</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> (value ^ (value &gt;&gt; <span class="number">31</span>))-(value &gt;&gt;<span class="number">31</span>)</span><br></pre></td></tr></table></figure>
+
+<p>1、若value为正数，则value二进制表示中最高位一定为0，那么 value &gt;&gt; 31 =0;</p>
+<p>value ^ (value &gt;&gt; 31) = value ^ 0 = value;</p>
+<p>value - (value &gt;&gt; 31) = value - 0 = value;</p>
+<p>即正数的绝对值仍是自身；</p>
+<p>2、若value为负数，则value二进制表示中最高位一定为1，那么 value &gt;&gt; 31 = 111…1 ,一共32个1，即-1；</p>
+<p>value ^ (value &gt;&gt; 31) = ! value;</p>
+<p>而负数以补码形式存放，==补码等于绝对值的原码取反+1==；</p>
+<p>那么这里 ! value - (value &gt;&gt; 31) =&gt; ! value +1 即得到的是value的绝对值；</p>
+<p>如果理解有困难，可以看这个例子：</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nLzA2N0M4MUQ0RTkzRTQwMDY1REZEODU4M0VGOTYxQkVBLnBuZw?x-oss-process=image/format,png" alt=""></p>
+<h3 id="如何找唯一成对的数？"><a href="#如何找唯一成对的数？" class="headerlink" title="如何找唯一成对的数？"></a>如何找唯一成对的数？</h3><p><strong>问题描述</strong>：1-1000这1000个数放在含有1001个元素的数组中，只有唯一的一个元素值重复，其它均只出现一次。每个数组元素只能访问一次，在不用辅助存储空间的前提下，设计一个算法，将它找出来；</p>
+<p><strong>思路</strong>：根据异或性质1： a ^ a = 0；可以用来==去重==；</p>
+<p>令T = 1 ^ 2 ^ 3 ^….. ^ 1000 ；</p>
+<p>那么遍历数组的同时将当前数字与 T 异或，在数组中只出现一次的数字会与 T 中的该数字相抵消，从而去重；最终会剩下重复的那个元素，因为它在数组和T中一共出现3次；</p>
+<p>举一个只有11个数的例子：         重复的元素在任意位置出现都是可以找出来的；</p>
+<p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nLzA0NDlCNzNDOTc1QzE5MkE1OUIzREU1OTBEQzAyODNDLnBuZw?x-oss-process=image/format,png" alt=""></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> T=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=<span class="number">1000</span>;i++)</span><br><span class="line">&#123;</span><br><span class="line">	T=T^i;      </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;=<span class="number">1000</span>;i++)</span><br><span class="line">&#123;</span><br><span class="line">	T=T^A[i];</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> T;</span><br></pre></td></tr></table></figure>
+
+<p>如有错误，感谢指正！</p>
 
     </div>
 
@@ -304,12 +365,6 @@
     
     
       
-  <div class="popular-posts-header">相关文章</div>
-  <ul class="popular-posts">
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="\2020\06\28\tacoyu的建站史\" rel="bookmark">tacoyu23的建站史</a></div>
-    </li>
-  </ul>
 
         <div class="reward-container">
   <div>You can reward me here. Thank you!</div>
@@ -340,7 +395,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://tacoyu23.github.io/2020/06/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%96%B9%E5%90%91%E5%8F%8A%E5%AF%BC%E5%B8%88%E9%80%89%E6%8B%A9%E6%9C%89%E6%84%9F/" title="计算机方向及导师选择有感">http://tacoyu23.github.io/2020/06/29/计算机方向及导师选择有感/</a>
+    <a href="http://tacoyu23.github.io/2020/06/30/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%9A%84%E5%B7%A7%E5%A6%99%E4%B9%8B%E5%A4%84/" title="位运算的巧妙之处">http://tacoyu23.github.io/2020/06/30/位运算的巧妙之处/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -352,7 +407,7 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag"><i class="fa fa-tag"></i> 记录</a>
+              <a href="/tags/Bit/" rel="tag"><i class="fa fa-tag"></i> Bit</a>
           </div>
 
         
@@ -361,13 +416,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/06/29/C++%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="prev" title="C++面试题">
-      <i class="fa fa-chevron-left"></i> C++面试题
+    <a href="/2020/06/30/%E5%8D%81%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95C-%E5%AE%9E%E7%8E%B0%E5%8F%8A%E6%80%BB%E7%BB%93/" rel="prev" title="十大经典排序算法C++实现及总结">
+      <i class="fa fa-chevron-left"></i> 十大经典排序算法C++实现及总结
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/06/30/PS%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/" rel="next" title="PS技术大杂烩">
-      PS技术大杂烩 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -427,6 +479,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#位运算的巧妙之处"><span class="nav-text">位运算的巧妙之处</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#应用"><span class="nav-text">应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#二进制中1的个数"><span class="nav-text">二进制中1的个数</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#异或运算的巧妙之处"><span class="nav-text">异或运算的巧妙之处</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#性质"><span class="nav-text">性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用-1"><span class="nav-text">应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#交换两个变量的值"><span class="nav-text">交换两个变量的值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不用判断语句，求整数绝对值"><span class="nav-text">不用判断语句，求整数绝对值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何找唯一成对的数？"><span class="nav-text">如何找唯一成对的数？</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
