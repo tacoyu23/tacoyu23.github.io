@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-center-atom.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":240,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="学习总结的一些PS使用技巧">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PS技术大杂烩">
+<meta property="og:url" content="http://yoursite.com/2020/06/30/PS%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/index.html">
+<meta property="og:site_name" content="tacoyu&#39;Blog">
+<meta property="og:description" content="学习总结的一些PS使用技巧">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623154317588.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623163842497.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624123719245.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624123831174.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624123919838.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624124017767.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624124609223.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624124802314.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624124911319.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624124929915.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624125220838.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624125234824.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624125245552.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624125254898.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624125951735.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624125947733.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624130240729.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624130838988.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624130719550.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624131045772.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/M4DN%60M7L2TDO%5DM0~@36@@S7.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/PI117%5B%5DP7VY52J%5DH@3PM6%7DI.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624143121988.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624143941405.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624143944940.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624145345249.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624145356705.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623155030859.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623162003679.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623162131974.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626151623951.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626151635086.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626151709811.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626151827905.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626151855041.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624150617653.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624155501802.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624155802184.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624160431312.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624160651903.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624160824426.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624161027239.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624161938797.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624162020013.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625165624032.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625163102517.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625163601189.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625163826389.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625165655867.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625165959086.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625171633811.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625171851591.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625172221336.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625172420646.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625173212982.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623134005435.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623134650608.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623134702613.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623134736510.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623134907452.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626135900462.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626140433543.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626140652988.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626141231281.png">
+<meta property="article:published_time" content="2020-06-30T02:22:17.000Z">
+<meta property="article:modified_time" content="2020-06-30T02:25:10.295Z">
+<meta property="article:author" content="Mr.L">
+<meta property="article:tag" content="PS">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623154317588.png">
+
+<link rel="canonical" href="http://yoursite.com/2020/06/30/PS%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>PS技术大杂烩 | tacoyu'Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="tacoyu'Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+    <a href="https://github.com/tacoyu23" target="_blank" rel="noopener" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">tacoyu'Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一旦你知道失败是什么感觉，就会决心追逐成功！</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">8</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">7</span></a>
+
+  </li>
+        <li class="menu-item menu-item-resources">
+
+    <a href="/resources/" rel="section"><i class="fa fa-download fa-fw"></i>资源</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/30/PS%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/未标题-1.png">
+      <meta itemprop="name" content="Mr.L">
+      <meta itemprop="description" content="坚持自己所坚持！热爱自己所热爱！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="tacoyu'Blog">
+    </span>
+
+    <span class="fa fa-file-word" title="post.wordcount">
+    字数统计 :  2.3k 字 |
+    </span>
+
+    <span class="fa fa-clock" title="post.min2read">
+    阅读时长 ≈ 8 分钟
+ 	</span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          PS技术大杂烩
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-30 10:22:17" itemprop="dateCreated datePublished" datetime="2020-06-30T10:22:17+08:00">2020-06-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-06-30 10:25:10" itemprop="dateModified" datetime="2020-06-30T10:25:10+08:00">2020-06-30</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Software/" itemprop="url" rel="index"><span itemprop="name">Software</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/06/30/PS%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/06/30/PS%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+            <div class="post-description">学习总结的一些PS使用技巧</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="一、PS六个要点"><a href="#一、PS六个要点" class="headerlink" title="一、PS六个要点"></a>一、PS六个要点</h1><h2 id="1、图层"><a href="#1、图层" class="headerlink" title="1、图层"></a>1、图层</h2><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623154317588.png" alt=""></p>
+<h2 id="2、形状"><a href="#2、形状" class="headerlink" title="2、形状"></a>2、形状</h2><h2 id="3、选区"><a href="#3、选区" class="headerlink" title="3、选区"></a>3、选区</h2><p>选择的区域</p>
+<h2 id="4、画笔"><a href="#4、画笔" class="headerlink" title="4、画笔"></a>4、画笔</h2><p>alt + 点击 ：取色到前景色；</p>
+<h2 id="5、文字"><a href="#5、文字" class="headerlink" title="5、文字"></a>5、文字</h2><h2 id="6、钢笔"><a href="#6、钢笔" class="headerlink" title="6、钢笔"></a>6、钢笔</h2><p>创建圆滑的曲线</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h1 id="二、图像相关问题"><a href="#二、图像相关问题" class="headerlink" title="二、图像相关问题"></a>二、图像相关问题</h1><h2 id="把竖图变横图"><a href="#把竖图变横图" class="headerlink" title="把竖图变横图"></a>把竖图变横图</h2><h2 id="图像变清晰-润滑"><a href="#图像变清晰-润滑" class="headerlink" title="图像变清晰(润滑)"></a>图像变清晰(润滑)</h2><p>1、复制图层-&gt;滤镜-&gt;表面模糊-&gt;调透明度</p>
+<p>2、复制图层-&gt;滤镜-&gt;其他-&gt;高反差保留(数值2-5之间)-&gt;混合模式选叠加</p>
+<h2 id="如何擦除图层A上图层B内容"><a href="#如何擦除图层A上图层B内容" class="headerlink" title="如何擦除图层A上图层B内容"></a>如何擦除图层A上图层B内容</h2><p>给图层B添加蒙版，在前景色黑色背景色白色的情况下是用画笔进行擦除</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623163842497.png" alt="image-20200623163842497"></p>
+<h2 id="图像修复"><a href="#图像修复" class="headerlink" title="图像修复"></a>图像修复</h2><h3 id="去水印"><a href="#去水印" class="headerlink" title="去水印"></a>去水印</h3><p>不同的图片去水印的方法也不一样，关键看图片背景的纹理是不是太复杂；</p>
+<p>复杂的话可能就要用仿制图章工具一点点弄，不复杂的话，直接修补工具去掉水印</p>
+<p><strong>1、背景不复杂的</strong></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624123719245.png" alt="image-20200624123719245"></p>
+<p>修补工具选择要修补的区域 然后移动到纹理相似的区域即可完成修补</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624123831174.png" alt="image-20200624123831174"></p>
+<p>对于交界面的那个文字 修补时注意对齐</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624123919838.png" alt="image-20200624123919838"></p>
+<p><strong>2、背景复杂的</strong></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624124017767.png" alt="image-20200624124017767"></p>
+<p>用仿制图章一点点复制</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624124609223.png" alt="image-20200624124609223"></p>
+<h3 id="去人物斑点"><a href="#去人物斑点" class="headerlink" title="去人物斑点"></a>去人物斑点</h3><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624124802314.png" alt="image-20200624124802314"></p>
+<p>污点修复画笔工具</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624124911319.png" alt="image-20200624124911319"></p>
+<p>一个个点就行</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624124929915.png" alt="image-20200624124929915"></p>
+<h3 id="消除图像中乱入的事物"><a href="#消除图像中乱入的事物" class="headerlink" title="消除图像中乱入的事物"></a>消除图像中乱入的事物</h3><p>简单的直接选区，选择要消除的东西 然后填充 内容识别</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624125220838.png" alt="image-20200624125220838"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624125234824.png" alt="image-20200624125234824"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624125245552.png" alt="image-20200624125245552"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624125254898.png" alt="image-20200624125254898"></p>
+<p>内容感知工具：把区域A移到区域B，A的原区域部分会内容识别，移到B的A也会内容识别把A放到B那，如果有点瑕疵，再用别的工具处理；</p>
+<h2 id="图像合成"><a href="#图像合成" class="headerlink" title="图像合成"></a>图像合成</h2><p>P图、表情包制作等；</p>
+<p>工具：套索 钢笔 + 图像混合；</p>
+<h3 id="把A的脸P到B的脸上"><a href="#把A的脸P到B的脸上" class="headerlink" title="把A的脸P到B的脸上"></a>把A的脸P到B的脸上</h3><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624125951735.png" alt="image-20200624125951735" style="zoom:33%;" />
+
+<img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624125947733.png" alt="image-20200624125947733" style="zoom:33%;" />
+
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624130240729.png" alt="image-20200624130240729"></p>
+<p>把这个图层复制到超越那里；</p>
+<p>然后扣除原图对应区域，可以将区域进行一定的缩小</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624130838988.png" alt="image-20200624130838988"></p>
+<p>然后选择两个图层，编辑，自动混合图层，确定；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624130719550.png" alt="image-20200624130719550"></p>
+<p>这种一般适合两个图片人物脸朝向相同，否则需要做出一些调整；</p>
+<p>整个步骤为：</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624131045772.png" alt="image-20200624131045772"></p>
+<h3 id="把完整的人P到另一个场景"><a href="#把完整的人P到另一个场景" class="headerlink" title="把完整的人P到另一个场景"></a>把完整的人P到另一个场景</h3><p>注意：姿势眼神、身体比例、光影颜色；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/M4DN%60M7L2TDO%5DM0~@36@@S7.png" alt="img"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/PI117%5B%5DP7VY52J%5DH@3PM6%7DI.png" alt="img"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624143121988.png" alt="image-20200624143121988"></p>
+<p>把图层复制过去后，调整好大小和位置，利用仿制图章、修补和选区自由变化、水平翻转等方法将周围背景进行修改，然后对色彩进行判断，看是否需要降低饱和度，是否需要加深颜色等等；</p>
+<p>加阴影就是在图层上新建一个图层 然后调整画笔透明度和流量、硬度，进行刻画；</p>
+<h3 id="换头大法"><a href="#换头大法" class="headerlink" title="换头大法"></a>换头大法</h3><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624143941405.png" alt="image-20200624143941405"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624143944940.png" alt="image-20200624143944940"></p>
+<p>把头和脖子扣下来，然后复制在图像2中，调整大小位置，对图像2背景利用图章等工具进行调整，然后给头，脖子添加阴影，方向键微调元素位置，然后用可选颜色调整肤色；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624145345249.png" alt="image-20200624145345249"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624145356705.png" alt="image-20200624145356705"></p>
+<h1 id="三、制作相关"><a href="#三、制作相关" class="headerlink" title="三、制作相关"></a>三、制作相关</h1><h2 id="制作幻影"><a href="#制作幻影" class="headerlink" title="制作幻影"></a>制作幻影</h2><p>复制多个该图层，调整好位置，依次调整透明度</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623155030859.png" alt="image-20200623155030859"></p>
+<h2 id="用文字组成的图像特效"><a href="#用文字组成的图像特效" class="headerlink" title="用文字组成的图像特效"></a>用文字组成的图像特效</h2><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623162003679.png" alt="image-20200623162003679"></p>
+<p>1、把图层填充为黑色；</p>
+<p>2、选择文字框，复制一堆的英文；调整颜色为白色，调整字形，字体大小；</p>
+<p>3、把图片粘贴进去，注意要在文字的上面，然后在图片图层上创建剪贴蒙版；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623162131974.png" alt="image-20200623162131974"></p>
+<h2 id="海报设计"><a href="#海报设计" class="headerlink" title="海报设计"></a>海报设计</h2><p>字体、层次、距离；</p>
+<p>不要用一大堆乱七八糟的字体，会有凌乱的感觉；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626151623951.png" alt="image-20200626151623951"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626151635086.png" alt="image-20200626151635086"></p>
+<p>海报的目的只是信息的传递，选三种以下的字体即可；</p>
+<p>文字层次，决定信息的可读性；注意对齐；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626151709811.png" alt="image-20200626151709811"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626151827905.png" alt="image-20200626151827905"></p>
+<p>人物与标题的排列方式</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626151855041.png" alt="image-20200626151855041"></p>
+<h1 id="四、人物抠图相关问题"><a href="#四、人物抠图相关问题" class="headerlink" title="四、人物抠图相关问题"></a>四、人物抠图相关问题</h1><h2 id="抠图大法"><a href="#抠图大法" class="headerlink" title="抠图大法"></a>抠图大法</h2><h3 id="选择并遮住"><a href="#选择并遮住" class="headerlink" title="选择并遮住"></a>选择并遮住</h3><p>1、魔棒/快速/套索 选区/选择主题 </p>
+<p>2、选择并遮住</p>
+<p>一般选择叠加模式，红色部分为非选择部分，调整下不透明度；</p>
+<p>==半径==就是边缘的半径：越大则图像处理的边缘半径越大；</p>
+<p>3、第二个神器工具：调整边缘画笔</p>
+<p>对边缘细节拿这个笔刷</p>
+<p>4、确定，添加图层蒙版，如果还需要修改细节部分，则选择==海绵工具==刷一下；</p>
+<p>==海绵工具==就是去掉颜色的饱和度，或者直接选择头发，调整饱和度；</p>
+<p>5、背景填充颜色；</p>
+<h2 id="人物磨皮-证件照-换背景"><a href="#人物磨皮-证件照-换背景" class="headerlink" title="人物磨皮/证件照/换背景"></a>人物磨皮/证件照/换背景</h2><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624150617653.png" alt="image-20200624150617653"></p>
+<p>1、污点修复工具修复大块瑕疵；</p>
+<p>2、磨皮滤镜工具Portraiture进行磨皮；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624155501802.png" alt="image-20200624155501802"></p>
+<p>但是，磨皮后有些模糊，不清晰；</p>
+<p>滤镜-&gt;其他-&gt;高反差保留-&gt;数值在2-5之间，确定-&gt;混合模式改成叠加；</p>
+<p>发现图像清晰很多；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624155802184.png" alt="image-20200624155802184"></p>
+<p>3、调整颜色</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624160431312.png" alt="image-20200624160431312"></p>
+<p>4、调整五官，用滤镜下的液化，有个人脸识别工具</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624160651903.png" alt="image-20200624160651903"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624160824426.png" alt="image-20200624160824426"></p>
+<p>5、换证件照背景</p>
+<p>新建图层，背景色调为蓝色，然后填充；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624161027239.png" alt="image-20200624161027239"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624161938797.png" alt="image-20200624161938797"></p>
+<p>各证件照大小：</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200624162020013.png" alt="image-20200624162020013"></p>
+<p>新建-&gt;调整好证件照大小-&gt;分辨率300 颜色模式CMYK-&gt;创建；</p>
+<p>给刚刚做完的图像盖印，然后复制过来，放缩，然后另存为；</p>
+<h2 id="人物精修-男"><a href="#人物精修-男" class="headerlink" title="人物精修 - 男"></a>人物精修 - 男</h2><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625165624032.png" alt="image-20200625165624032"></p>
+<p>1、污点修复工具去除大斑点；</p>
+<p>2、高低频；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625163102517.png" alt="image-20200625163102517"></p>
+<p>先对低频处理：</p>
+<p>在通道中找到对比度比较高的颜色图层-&gt;滤镜-&gt;其他-&gt;高反差保留-&gt;调到斑点刚刚好出现的数值即可；</p>
+<p>图像-&gt;计算-&gt;混合模式-&gt;强光；</p>
+<p>图像-&gt;计算-&gt;确定；</p>
+<p>图像-&gt;计算-&gt;确定；</p>
+<p>图像-&gt;计算-&gt;确定；</p>
+<p>斑点越来越清楚；</p>
+<p>ctrl+点击 进行选区  选择二的是高光的部分，就是白色的部分；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625163601189.png" alt="image-20200625163601189"></p>
+<p>反选；</p>
+<p>ctrl + M 把曲线拉高一点 这样就能把黑的斑点调亮；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625163826389.png" alt="image-20200625163826389"></p>
+<p>滤镜-&gt; 模糊-&gt; 高斯模糊；</p>
+<p>高频处理：</p>
+<p>滤镜-&gt;高反差保留-&gt; 数值调到跟高斯模糊差不多即可；</p>
+<p>混合模式改为线性光/点光；</p>
+<p>3、修改</p>
+<p>对低频进行修改：</p>
+<p>选定暗斑区域，对区域选区，然后高斯模糊；</p>
+<p>调整曲线;</p>
+<p>用Portraiture插件对低频处理同理；</p>
+<p>4、液化，人脸识别处理；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625165655867.png" alt="image-20200625165655867"></p>
+<h2 id="人物精修-女"><a href="#人物精修-女" class="headerlink" title="人物精修 - 女"></a>人物精修 - 女</h2><p>痘印、皱纹、暗斑(亮度问题)</p>
+<h3 id="法一"><a href="#法一" class="headerlink" title="法一"></a>法一</h3><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625165959086.png" alt="image-20200625165959086"></p>
+<p>1、修补工具、污点工具处理；</p>
+<p>2、黑白颜色调出，曲线调整图层调整使得对比明显，让痘痘显现出来，如果还不清楚，再复制一份曲线调整；把这三个打组；</p>
+<p>3、新建空白图层，填充50%灰；</p>
+<p>然后用画笔工具，降低流量和平滑，  前景白背景黑，在灰图层上进行精修，就是把黑色的斑点点白；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625171633811.png" alt="image-20200625171633811"></p>
+<h3 id="法二：双曲线"><a href="#法二：双曲线" class="headerlink" title="法二：双曲线"></a>法二：双曲线</h3><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625171851591.png" alt="image-20200625171851591"></p>
+<p>把亮曲线亮度调高，暗曲线的亮度调低，然后两个都填充黑色(两个图层不可见)</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625172221336.png" alt="image-20200625172221336"></p>
+<p>此时可以打开观察后图层组，如果把暗的地方变亮，就在亮图层上对暗的地方进行画笔涂抹；相当于把不可见的那里删除，让他变亮到开始亮曲线的程度；</p>
+<p>把亮的地方变暗同理；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625172420646.png" alt="image-20200625172420646"></p>
+<h3 id="调整肤色"><a href="#调整肤色" class="headerlink" title="调整肤色"></a>调整肤色</h3><p>可选颜色 黄色 降低黄色；</p>
+<p>调整红色，红色降低，红色对立面青色增加；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200625173212982.png" alt="image-20200625173212982"></p>
+<h2 id="给人物加影子-阴影"><a href="#给人物加影子-阴影" class="headerlink" title="给人物加影子/阴影"></a>给人物加影子/阴影</h2><p>1、ctrl + j 复制图层；</p>
+<p>2、锁定透明像素；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623134005435.png" alt="image-20200623134005435"></p>
+<p>3、alt + del 填充黑色 然后解锁；</p>
+<p>4、ctrl + T 把影子往下压，然后垂直翻转，斜切到合适位置；</p>
+<p>5、调整透明度或者调整混合选项；</p>
+<h2 id="嘴唇上色口红"><a href="#嘴唇上色口红" class="headerlink" title="嘴唇上色口红"></a>嘴唇上色口红</h2><p>1、选区  羽化5像素左右  建立图层；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623134650608.png" alt="image-20200623134650608"></p>
+<p>2、填充红色</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623134702613.png" alt="image-20200623134702613"></p>
+<p>3、混合模式更改为正片叠底</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623134736510.png" alt="image-20200623134736510"></p>
+<p>4、调整混合选项 按住ait+左键 调整</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200623134907452.png" alt="image-20200623134907452"></p>
+<h1 id="五、调色相关问题"><a href="#五、调色相关问题" class="headerlink" title="五、调色相关问题"></a>五、调色相关问题</h1><h2 id="日系风格"><a href="#日系风格" class="headerlink" title="日系风格"></a>日系风格</h2><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626135900462.png" alt="image-20200626135900462"></p>
+<p>滤镜-&gt;Camera滤镜</p>
+<p>太黑了  =&gt;  曝光不够，加曝光，黑色，阴影；</p>
+<p>调整对比度、饱和度等；</p>
+<p>添加一些光线 =&gt;  新建图层 拿画笔点个白色的 然后放大 调整位置；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626140433543.png" alt="image-20200626140433543"></p>
+<h2 id="小清新"><a href="#小清新" class="headerlink" title="小清新"></a>小清新</h2><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626140652988.png" alt="image-20200626140652988"></p>
+<p>camera滤镜调整 HSL调整 </p>
+<p>饱和度：调整色彩浓度；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200626141231281.png" alt="image-20200626141231281"></p>
+<p>再调整下曲线，配上文字；</p>
+<h1 id="Add：相关功能和选项介绍"><a href="#Add：相关功能和选项介绍" class="headerlink" title="Add：相关功能和选项介绍"></a>Add：相关功能和选项介绍</h1><h2 id="混合模式"><a href="#混合模式" class="headerlink" title="混合模式"></a>混合模式</h2><h3 id="正片叠底"><a href="#正片叠底" class="headerlink" title="正片叠底"></a>正片叠底</h3><p>正片叠底是 ps 中的一种混合模式，存在于颜色混合模式、通道混合模式、图层混合模式的变暗模式组中，是用户使用频率较高的一种变暗模式，使用“正片叠底” 混合模式时一般不会产生色阶溢出，当调换基色和混合色的位置，结果色相同。</p>
+<h2 id="调节颜色"><a href="#调节颜色" class="headerlink" title="调节颜色"></a>调节颜色</h2><h3 id="可选颜色"><a href="#可选颜色" class="headerlink" title="可选颜色"></a>可选颜色</h3><p>拉低那个颜色就是将哪个颜色减弱；</p>
+<p>注意看是对整个图像调色 还是对下一图层调色 设定好；</p>
+<h1 id="Add：快捷键"><a href="#Add：快捷键" class="headerlink" title="Add：快捷键"></a>Add：快捷键</h1><h2 id="填充相关"><a href="#填充相关" class="headerlink" title="填充相关"></a>填充相关</h2><p>D 恢复前景背景黑白色</p>
+<p>X 切换背景色</p>
+<p>SHIFT +  F5 填充</p>
+<p>图层蒙版下：</p>
+<p>ctrl + delete 快速填充背景色；</p>
+<p>alt + delete 快速填充前景色</p>
+<h2 id="选区相关"><a href="#选区相关" class="headerlink" title="选区相关"></a>选区相关</h2><p>ctrl + j 快速创建选区；</p>
+<p>ctrl + 左键图层  选择图层所在选区；</p>
+<p>ctrl + H 隐藏选区；</p>
+<h2 id="变换相关"><a href="#变换相关" class="headerlink" title="变换相关"></a>变换相关</h2><p>ctrl + T 自由变换；</p>
+<h2 id="图层相关"><a href="#图层相关" class="headerlink" title="图层相关"></a>图层相关</h2><p>ctrl + 左键 选择改图层</p>
+<p>ctrl + shift + alt + e 盖印图层，把下面所有操作合并在这个图层上；</p>
+<h1 id="Add：待解决的问题"><a href="#Add：待解决的问题" class="headerlink" title="Add：待解决的问题"></a>Add：待解决的问题</h1><h2 id="滤镜等8BF工具不被兼容问题"><a href="#滤镜等8BF工具不被兼容问题" class="headerlink" title="滤镜等8BF工具不被兼容问题"></a>滤镜等8BF工具不被兼容问题</h2>
+    </div>
+
+    
+    
+    
+      
+
+        <div class="reward-container">
+  <div>You can reward me here. Thank you!</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="Mr.L 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Mr.L 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Mr.L
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2020/06/30/PS%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/" title="PS技术大杂烩">http://yoursite.com/2020/06/30/PS技术大杂烩/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/PS/" rel="tag"><i class="fa fa-tag"></i> PS</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/06/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%96%B9%E5%90%91%E5%8F%8A%E5%AF%BC%E5%B8%88%E9%80%89%E6%8B%A9%E6%9C%89%E6%84%9F/" rel="prev" title="计算机方向及导师选择有感">
+      <i class="fa fa-chevron-left"></i> 计算机方向及导师选择有感
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/06/30/%E5%BF%83%E7%90%86%E5%AD%A6-%E5%BD%B1%E5%93%8D%E5%8A%9B/" rel="next" title="心理学-影响力">
+      心理学-影响力 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、PS六个要点"><span class="nav-text">一、PS六个要点</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、图层"><span class="nav-text">1、图层</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、形状"><span class="nav-text">2、形状</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、选区"><span class="nav-text">3、选区</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、画笔"><span class="nav-text">4、画笔</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、文字"><span class="nav-text">5、文字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、钢笔"><span class="nav-text">6、钢笔</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-text"></span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、图像相关问题"><span class="nav-text">二、图像相关问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#把竖图变横图"><span class="nav-text">把竖图变横图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图像变清晰-润滑"><span class="nav-text">图像变清晰(润滑)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何擦除图层A上图层B内容"><span class="nav-text">如何擦除图层A上图层B内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图像修复"><span class="nav-text">图像修复</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#去水印"><span class="nav-text">去水印</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#去人物斑点"><span class="nav-text">去人物斑点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#消除图像中乱入的事物"><span class="nav-text">消除图像中乱入的事物</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图像合成"><span class="nav-text">图像合成</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#把A的脸P到B的脸上"><span class="nav-text">把A的脸P到B的脸上</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#把完整的人P到另一个场景"><span class="nav-text">把完整的人P到另一个场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#换头大法"><span class="nav-text">换头大法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、制作相关"><span class="nav-text">三、制作相关</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#制作幻影"><span class="nav-text">制作幻影</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用文字组成的图像特效"><span class="nav-text">用文字组成的图像特效</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#海报设计"><span class="nav-text">海报设计</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、人物抠图相关问题"><span class="nav-text">四、人物抠图相关问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#抠图大法"><span class="nav-text">抠图大法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#选择并遮住"><span class="nav-text">选择并遮住</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人物磨皮-证件照-换背景"><span class="nav-text">人物磨皮&#x2F;证件照&#x2F;换背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人物精修-男"><span class="nav-text">人物精修 - 男</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#人物精修-女"><span class="nav-text">人物精修 - 女</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#法一"><span class="nav-text">法一</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#法二：双曲线"><span class="nav-text">法二：双曲线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调整肤色"><span class="nav-text">调整肤色</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#给人物加影子-阴影"><span class="nav-text">给人物加影子&#x2F;阴影</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#嘴唇上色口红"><span class="nav-text">嘴唇上色口红</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#五、调色相关问题"><span class="nav-text">五、调色相关问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#日系风格"><span class="nav-text">日系风格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小清新"><span class="nav-text">小清新</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Add：相关功能和选项介绍"><span class="nav-text">Add：相关功能和选项介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#混合模式"><span class="nav-text">混合模式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#正片叠底"><span class="nav-text">正片叠底</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#调节颜色"><span class="nav-text">调节颜色</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#可选颜色"><span class="nav-text">可选颜色</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Add：快捷键"><span class="nav-text">Add：快捷键</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#填充相关"><span class="nav-text">填充相关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选区相关"><span class="nav-text">选区相关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#变换相关"><span class="nav-text">变换相关</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图层相关"><span class="nav-text">图层相关</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Add：待解决的问题"><span class="nav-text">Add：待解决的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#滤镜等8BF工具不被兼容问题"><span class="nav-text">滤镜等8BF工具不被兼容问题</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Mr.L"
+      src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/未标题-1.png">
+  <p class="site-author-name" itemprop="name">Mr.L</p>
+  <div class="site-description" itemprop="description">坚持自己所坚持！热爱自己所热爱！</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/tacoyu23" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;tacoyu23" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/463047622@qq.com" title="E-Mail → 463047622@qq.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/3708965564/profile?topnav=1&wvr=6" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;3708965564&#x2F;profile?topnav&#x3D;1&amp;wvr&#x3D;6" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://blog.csdn.net/wyll19980812" title="https:&#x2F;&#x2F;blog.csdn.net&#x2F;wyll19980812" rel="noopener" target="_blank">tacoyu's CSDN</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mr.L</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/canvas_lines.min.js"></script>
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'VcFjReOVbkfKap6tylFW8d5V-gzGzoHsz',
+      appKey     : 'p2biokb0TmayMIoXING3pTHy',
+      placeholder: "Please write your suggestion!",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+  
+</body>
+</html>
