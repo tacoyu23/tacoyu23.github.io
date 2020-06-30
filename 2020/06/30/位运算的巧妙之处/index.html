@@ -28,16 +28,17 @@
 <meta property="og:site_name" content="tacoyu&#39;Blog">
 <meta property="og:description" content="深入了解位运算并使用它解决问题">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nLzIwMjAwNTE4MjEyNDI0LnBuZw">
 <meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL0NBQ0E3QjlEOTBFNEI3MEFFMUE0RTE1RUI2RkY4RENCLnBuZw?x-oss-process=image/format,png">
 <meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL0UwOTA3MzlDMkFEQzIwN0Q2OTEzMTBDRUZBMDQ0NzM5LnBuZw?x-oss-process=image/format,png">
 <meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nLzA2N0M4MUQ0RTkzRTQwMDY1REZEODU4M0VGOTYxQkVBLnBuZw?x-oss-process=image/format,png">
 <meta property="og:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nLzA0NDlCNzNDOTc1QzE5MkE1OUIzREU1OTBEQzAyODNDLnBuZw?x-oss-process=image/format,png">
 <meta property="article:published_time" content="2020-06-30T05:59:59.000Z">
-<meta property="article:modified_time" content="2020-06-30T06:01:45.141Z">
+<meta property="article:modified_time" content="2020-06-30T07:47:16.240Z">
 <meta property="article:author" content="Mr.L">
 <meta property="article:tag" content="Bit">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL0NBQ0E3QjlEOTBFNEI3MEFFMUE0RTE1RUI2RkY4RENCLnBuZw?x-oss-process=image/format,png">
+<meta name="twitter:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nLzIwMjAwNTE4MjEyNDI0LnBuZw">
 
 <link rel="canonical" href="http://tacoyu23.github.io/2020/06/30/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%9A%84%E5%B7%A7%E5%A6%99%E4%B9%8B%E5%A4%84/">
 
@@ -221,7 +222,7 @@
     </span>
 
     <span class="fa fa-file-word" title="post.wordcount">
-    字数统计 :  935 字 |
+    字数统计 :  924 字 |
     </span>
 
     <span class="fa fa-clock" title="post.min2read">
@@ -246,7 +247,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-06-30 14:01:45" itemprop="dateModified" datetime="2020-06-30T14:01:45+08:00">2020-06-30</time>
+                <time title="修改时间：2020-06-30 15:47:16" itemprop="dateModified" datetime="2020-06-30T15:47:16+08:00">2020-06-30</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -294,11 +295,10 @@
         <h1 id="位运算的巧妙之处"><a href="#位运算的巧妙之处" class="headerlink" title="位运算的巧妙之处"></a>位运算的巧妙之处</h1><p>算法中，位运算可以巧妙运用在一下几个方面：</p>
 <p>1、判断奇偶数  =&gt;  x&amp;1</p>
 <p>2、判断数x中第k ( 从右至左 ) 位是1还是0  </p>
-<pre><code>法1：( x &gt;&gt; ( k - 1 ) ) &amp; 1
-
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nLzIwMjAwNTE4MjEyNDI0LnBuZw?x-oss-process=image/format,png)
-
-法2：x &amp; ( 1 &lt;&lt; ( k - 1 ) )</code></pre><p>3、交换两个整数变量 a , b 的值</p>
+<p>法1：<code>( x &gt;&gt; ( k - 1 ) ) &amp; 1</code></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nLzIwMjAwNTE4MjEyNDI0LnBuZw" alt="img"></p>
+<p>法2：<code>x &amp; ( 1 &lt;&lt; ( k - 1 ) )</code></p>
+<p>3、交换两个整数变量 a , b 的值</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = a ^ b;</span><br><span class="line">b = b ^ a;</span><br><span class="line">a = a ^ b;</span><br></pre></td></tr></table></figure>
 
 <p>这里为什么能这样做，在后面的异或运算中会说明；</p>
