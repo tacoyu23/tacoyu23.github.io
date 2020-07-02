@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tacoyu23.github.io/"/>
-  <updated>2020-06-30T07:47:16.240Z</updated>
+  <updated>2020-07-02T15:23:00.270Z</updated>
   <id>http://tacoyu23.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Back from JiangSu</title>
+    <link href="http://tacoyu23.github.io/2020/07/02/Back%20from%20JiangSu/"/>
+    <id>http://tacoyu23.github.io/2020/07/02/Back%20from%20JiangSu/</id>
+    <published>2020-07-02T15:15:02.000Z</published>
+    <updated>2020-07-02T15:23:00.270Z</updated>
+    
+    <content type="html"><![CDATA[<p>​    今天从江苏回益阳，挺累的；一路上睡了很久，也思考了很久；大概就是想些最近的事吧，先是人工智能的那个竞赛，我们组是在线试衣系统，目前在攻克生成1：1线上模型的解决方案；然后就是华为杯数学建模的比赛，暂时处于培训阶段，准备先把这些资料弄熟吧，跟着培训的进度，有人指点总有好处；然后就是自己又想在Github上找些项目做，在深度学习方向有所进展，读研也要跟着导师走这条路的；最后还想自己赚钱，先赚小几千跟YLL出去旅个游吧，不求经济独立，只求有些收入；</p><p>​    事是有点多奥，还有驾照的事，十来号就要考科三了，这几天得抓紧练，一次过了啥都好说！慢慢来吧，事多急也没用，反而容易啥都干不好；</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;​    今天从江苏回益阳，挺累的；一路上睡了很久，也思考了很久；大概就是想些最近的事吧，先是人工智能的那个竞赛，我们组是在线试衣系统，目前在攻克生成1：1线上模型的解决方案；然后就是华为杯数学建模的比赛，暂时处于培训阶段，准备先把这些资料弄熟吧，跟着培训的进度，有人指点总
+      
+    
+    </summary>
+    
+    
+      <category term="Privacy" scheme="http://tacoyu23.github.io/categories/Privacy/"/>
+    
+    
+      <category term="记录" scheme="http://tacoyu23.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>位运算的巧妙之处</title>
@@ -207,9 +233,9 @@
     <link href="http://tacoyu23.github.io/2020/06/28/tacoyu%E7%9A%84%E5%BB%BA%E7%AB%99%E5%8F%B2/"/>
     <id>http://tacoyu23.github.io/2020/06/28/tacoyu%E7%9A%84%E5%BB%BA%E7%AB%99%E5%8F%B2/</id>
     <published>2020-06-28T12:20:12.000Z</published>
-    <updated>2020-06-30T00:13:14.991Z</updated>
+    <updated>2020-06-30T14:00:20.936Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="2020-6-27-初学Github"><a href="#2020-6-27-初学Github" class="headerlink" title="2020/6/27 初学Github"></a>2020/6/27 初学Github</h1><ol><li><p>因为在线试衣系统以及以后做项目的需要，花了将近六个小时熟悉传说中的Github；</p></li><li><p>对自己的Github进行修改，并创建 .github.io博客；</p></li></ol><h1 id="2020-6-28-博客初成"><a href="#2020-6-28-博客初成" class="headerlink" title="2020/6/28 博客初成"></a>2020/6/28 博客初成</h1><ol><li><p>在CSDN上找资料，学习使用Git命令以及Hexo；</p></li><li><p>Github上使用Hexo配置初始的next主题；</p></li><li><p>使用next第四个主题，调暗模式，把开始的两篇文章传上去；</p></li><li><p>打开并正确使用标签、分类，设置图像、链接以及打赏功能；</p></li></ol><h1 id="2020-6-29-博客基本完善"><a href="#2020-6-29-博客基本完善" class="headerlink" title="2020/6/29 博客基本完善"></a>2020/6/29 博客基本完善</h1><ol><li><p>增加了一些新功能，比如动态背景、加入fork Github图标(虽然这个基本用不着，哈哈)；</p></li><li><p>增加了评论啊、统计等功能，不过还是有两个没配置成功，新版和旧版的区别还是挺大的，网上大多是旧版的教程；</p></li></ol><p>这个熟能生巧，慢慢摸索着前进吧！</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="2020-6-27-初学Github"><a href="#2020-6-27-初学Github" class="headerlink" title="2020/6/27 初学Github"></a>2020/6/27 初学Github</h1><ol><li><p>因为在线试衣系统以及以后做项目的需要，花了将近六个小时熟悉传说中的Github；</p></li><li><p>对自己的Github进行修改，并创建 .github.io博客；</p></li></ol><h1 id="2020-6-28-博客初成"><a href="#2020-6-28-博客初成" class="headerlink" title="2020/6/28 博客初成"></a>2020/6/28 博客初成</h1><ol><li><p>在CSDN上找资料，学习使用Git命令以及Hexo；</p></li><li><p>Github上使用Hexo配置初始的next主题；</p></li><li><p>使用next第四个主题，调暗模式，把开始的两篇文章传上去；</p></li><li><p>打开并正确使用标签、分类，设置图像、链接以及打赏功能；</p></li></ol><h1 id="2020-6-29-博客基本完善"><a href="#2020-6-29-博客基本完善" class="headerlink" title="2020/6/29 博客基本完善"></a>2020/6/29 博客基本完善</h1><ol><li><p>增加了一些新功能，比如动态背景、加入fork Github图标(虽然这个基本用不着，哈哈)；</p></li><li><p>增加了评论啊、统计等功能，不过还是有两个没配置成功，新版和旧版的区别还是挺大的，网上大多是旧版的教程；</p></li></ol><p>这个熟能生巧，慢慢摸索着前进吧！</p><h1 id="2020-6-30-完善博客"><a href="#2020-6-30-完善博客" class="headerlink" title="2020/6/30 完善博客"></a>2020/6/30 完善博客</h1><ol><li>改了下主页透明度、上传了一些以前写过的文章，哈哈哈！剩下的懒得传了，以后再说吧；</li><li>调整了一下距离，本来准备把主页摘要框框弄个正方形的，发现不好看，又调回去了；</li><li>估计博客暂时就这样了，还勉强吧，哈哈哈！</li></ol>]]></content>
     
     <summary type="html">
     
