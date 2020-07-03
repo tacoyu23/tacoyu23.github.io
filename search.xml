@@ -4,6 +4,69 @@
   
     
     <entry>
+      <title>安装cvspy包</title>
+      <link href="/2020/07/03/%E5%AE%89%E8%A3%85cvspy%E5%8C%85/"/>
+      <url>/2020/07/03/%E5%AE%89%E8%A3%85cvspy%E5%8C%85/</url>
+      
+        <content type="html"><![CDATA[<p>下载压缩包：链接：<a href="https://pan.baidu.com/s/1wxMO5IN0R9S8fZnoGv75XQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1wxMO5IN0R9S8fZnoGv75XQ</a>  ；提取码：svrc</p><p>注意版本要对应，我用的python3.7.2；不同版本参考这篇文章：<a href="https://blog.csdn.net/qq_36477513/article/details/104779850" target="_blank" rel="noopener">Python下载安装第三方库cvxpy包</a></p><p><strong>1、将压缩包解压(记住解压的位置，我是解压到的桌面)</strong></p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703153111851.png" alt="image-20200703153111851"></p><p>里面是这些文件：</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703153134772.png" alt="image-20200703153134772"></p><p><strong>2、在文件所在的文件夹中打开DOC界面（win10直接在当前文件夹空白处按住shift，右键打开powershell窗口）</strong></p><h2 id=""><a href="#" class="headerlink" title=""></a><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703153318636.png" alt="image-20200703153318636"></h2><p>然后依次安装下列包</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703153749989.png" alt="image-20200703153749989"></p><p>在命令行中依次输入<code>pip install xxxxx.whl</code>  </p><p>xxxxx.whl就是上面说的包的全名！ 一定要复制全名 加后缀；</p><p>类似这个：</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703154007070.png" alt="image-20200703154007070"></p><p>每安装一个 下面就有进度，成功的话最后一句是<code>successfully installed  xxxxx-xx</code></p><p>最后安装cvxpy后</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703154149223.png" alt="image-20200703154149223"></p><p><strong>3、在win + R ，输入cmd</strong></p><p> 然后再命令行中先输入 <code>python</code> 再输入<code>import cvxpy</code></p><p>如果是下面这样 则表示成功；</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703154413352.png" alt="image-20200703154413352"></p><p>失败的话它会显示 <strong>找不到 名字为cvspy的module</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Google浏览器安装Google访问助手</title>
+      <link href="/2020/07/03/Google%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AE%89%E8%A3%85%E8%AE%BF%E9%97%AE%E5%8A%A9%E6%89%8B/"/>
+      <url>/2020/07/03/Google%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AE%89%E8%A3%85%E8%AE%BF%E9%97%AE%E5%8A%A9%E6%89%8B/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1、下载Google浏览器和访问助手"><a href="#1、下载Google浏览器和访问助手" class="headerlink" title="1、下载Google浏览器和访问助手"></a>1、下载Google浏览器和访问助手</h1><p>在链接中下载Google浏览器和Google访问助手；</p><p>链接：<a href="https://pan.baidu.com/s/1nn6SbqSLwvVhkOSVocTUzg" target="_blank" rel="noopener">https://pan.baidu.com/s/1nn6SbqSLwvVhkOSVocTUzg</a> ；提取码：zbdo；</p><h1 id="2、解压"><a href="#2、解压" class="headerlink" title="2、解压"></a>2、解压</h1><p>安装Google浏览器，将下载好的Google访问助手<strong>后缀 crx 改成 rar</strong></p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL2ltYWdlLTIwMjAwNzAyMjI0NjAyMjk0LnBuZw?x-oss-process=image/format,png" alt="image-20200702224602294"></p><p>在桌面新建一个文件夹；</p><p>然后打开Google访问助手进行解压，将里面的<strong>所有文件解压到桌面的新建文件夹</strong>中；</p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL2ltYWdlLTIwMjAwNzAyMjI0ODI4MjEyLnBuZw?x-oss-process=image/format,png" alt="image-20200702224828212"></p><h1 id="3、Google浏览器加载"><a href="#3、Google浏览器加载" class="headerlink" title="3、Google浏览器加载"></a>3、Google浏览器加载</h1><p>在Google浏览器中打开<strong>扩展程序</strong></p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL2ltYWdlLTIwMjAwNzAyMjI1MjUwNTQwLnBuZw?x-oss-process=image/format,png" alt="image-20200702225250540"></p><p>点击 <strong>加载已解压的扩展程序</strong></p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL2ltYWdlLTIwMjAwNzAyMjI1NTEzNjkzLnBuZw?x-oss-process=image/format,png" alt="image-20200702225513693"></p><p>然后选择<strong>桌面的新建文件夹</strong>！</p><p>然后就加载成功了</p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL2ltYWdlLTIwMjAwNzAyMjI1NTU1NTM3LnBuZw?x-oss-process=image/format,png" alt="image-20200702225555537"></p><h1 id="4、永久激活"><a href="#4、永久激活" class="headerlink" title="4、永久激活"></a>4、永久激活</h1><p>安装成功后打开新页面会自动弹出这个界面，提示永久激活！</p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL2ltYWdlLTIwMjAwNzAyMjI1OTUzMTAyLnBuZw?x-oss-process=image/format,png" alt="image-20200702225953102"></p><p>点击永久免费激活；</p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL2ltYWdlLTIwMjAwNzAyMjMwMDQwNDY1LnBuZw?x-oss-process=image/format,png" alt="image-20200702230040465"></p><p>前往选项页面设置；</p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL2ltYWdlLTIwMjAwNzAyMjMwMTAwNzkyLnBuZw?x-oss-process=image/format,png" alt="image-20200702230100792"></p><p>点击自动打开主页，随便选一个即可；</p><p>然后重启浏览器，就会以你刚刚设置的为主页，并且有以下提示；</p><p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly90YWNvdHVlc2RheXl5Lm9zcy1jbi1zaGVuemhlbi5hbGl5dW5jcy5jb20vdW1nL2ltYWdlLTIwMjAwNzAyMjMwMTUxNjcxLnBuZw?x-oss-process=image/format,png" alt="image-20200702230151671"></p><p>不要停用就行了！</p><h1 id="Notice"><a href="#Notice" class="headerlink" title="Notice"></a>Notice</h1><p>这个文件夹不可以删除！删除了扩展程序就没了！<br>如果觉得放桌面碍眼，就放你自己指定的文件夹，然后重新添加扩展一遍就行了！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Software </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>明天冲乐高机器人面试</title>
+      <link href="/2020/07/03/%E6%98%8E%E5%A4%A9%E5%86%B2%E4%B9%90%E9%AB%98%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%9D%A2%E8%AF%95/"/>
+      <url>/2020/07/03/%E6%98%8E%E5%A4%A9%E5%86%B2%E4%B9%90%E9%AB%98%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%9D%A2%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<p>​    Boss直聘的信息还是比智联的靠谱，明天上午10：30去福中福应聘乐高机器人编程老师，人生第一次面试！<a id="more"></a>哈哈哈哈！可能也没多正规，也不一定会看简历，反正就上吧，就要求C++和python嘛，也看看机器人是怎么玩的；</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Privacy </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 记录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Back from JiangSu</title>
       <link href="/2020/07/02/Back%20from%20JiangSu/"/>
       <url>/2020/07/02/Back%20from%20JiangSu/</url>
