@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-center-atom.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"luweir.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":240,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="记录下从7月5日开始，我参加湖南大学数学建模培训课程所做的笔记、收获和心得">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数学建模培训学习笔记">
+<meta property="og:url" content="http://luweir.github.io/2020/07/13/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E5%9F%B9%E8%AE%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="Luweir&#39;Blog">
+<meta property="og:description" content="记录下从7月5日开始，我参加湖南大学数学建模培训课程所做的笔记、收获和心得">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200710154400856.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200710160333279.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200708111351959.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200708111517144.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200708111814321.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200708111850965.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200708112007295.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200708112122257.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200708112313232.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200708111733509.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200712223315129.png">
+<meta property="og:image" content="c:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200712223615527.png">
+<meta property="og:image" content="c:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200712223813487.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200712223825343.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200712230350836.png">
+<meta property="og:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200713110821315.png">
+<meta property="article:published_time" content="2020-07-13T04:32:00.000Z">
+<meta property="article:modified_time" content="2020-07-13T04:32:58.239Z">
+<meta property="article:author" content="Mr.L">
+<meta property="article:tag" content="数学建模">
+<meta property="article:tag" content="笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200710154400856.png">
+
+<link rel="canonical" href="http://luweir.github.io/2020/07/13/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E5%9F%B9%E8%AE%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>数学建模培训学习笔记 | Luweir'Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Luweir'Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+    <a href="https://github.com/tacoyu23" target="_blank" rel="noopener" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Luweir'Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一旦你知道失败是什么感觉，就会决心追逐成功！</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">17</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">20</span></a>
+
+  </li>
+        <li class="menu-item menu-item-resources">
+
+    <a href="/resources/" rel="section"><i class="fa fa-download fa-fw"></i>资源</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://luweir.github.io/2020/07/13/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E5%9F%B9%E8%AE%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/未标题-1.png">
+      <meta itemprop="name" content="Mr.L">
+      <meta itemprop="description" content="坚持自己所坚持！热爱自己所热爱！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Luweir'Blog">
+    </span>
+
+    <span class="fa fa-file-word" title="post.wordcount">
+    字数统计 :  3.1k 字 |
+    </span>
+
+    <span class="fa fa-clock" title="post.min2read">
+    阅读时长 ≈ 10 分钟
+ 	</span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          数学建模培训学习笔记
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-07-13 12:32:00" itemprop="dateCreated datePublished" datetime="2020-07-13T12:32:00+08:00">2020-07-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-07-13 12:32:58" itemprop="dateModified" datetime="2020-07-13T12:32:58+08:00">2020-07-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Math-Module/" itemprop="url" rel="index"><span itemprop="name">Math Module</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/07/13/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E5%9F%B9%E8%AE%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/07/13/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E5%9F%B9%E8%AE%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+            <div class="post-description">记录下从7月5日开始，我参加湖南大学数学建模培训课程所做的笔记、收获和心得</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="2020-7-5学习笔记"><a href="#2020-7-5学习笔记" class="headerlink" title="2020.7.5学习笔记"></a>2020.7.5学习笔记</h1><p>Python 语言具有通用性、高效性、跨平台移植性和安全性，广泛应用于科学计算、自然语言处理、图形图像处理、游戏开发、Web 应用等方面，在全球范围内拥有众多开发者专业社群。</p>
+<p>安装python后使用pip进行库的安装；</p>
+<p>常见的库有：</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200710154400856.png" alt="image-20200710154400856"></p>
+<p>建模里面要用到的库大概有：Numpy、Scipy、Pandas、Matplotlib、Networkx、cvxpy、Tensorflow等等</p>
+<p>Anaconda中的jupyterNotebook同样也能实现很好的展示；</p>
+<p>后面大概介绍了python的语法；</p>
+<p>SciPy 是在 NumPy 库的基础上增加了众多的数学、科学以及工程计算中常用函数的库。SciPy 库依赖于 NumPy，提供了便捷且快速的 维数组操作。SciPy 库与 NumPy 数组一起工作，提供了许多友好和高效的处理方法，它包括了统计、优化、线性代数模块、傅里叶变换、信号、图像处理和常微分方程的求解等，功能十分强大。</p>
+<p>Scipy还能用的积分计算模式；</p>
+<p>使用 pylab 或 pyplot 绘图的一般过程为：首先读入数据，然后根据实际需要绘制折线图、散点图、柱状图、雷达图或三维曲线和曲面，接下来设置轴和图形属性，最后显示或保存绘图结果。</p>
+<h1 id="2020-7-6学习笔记"><a href="#2020-7-6学习笔记" class="headerlink" title="2020.7.6学习笔记"></a>2020.7.6学习笔记</h1><p>今天开始接触了线性代数的模型和整数规划模型，有点偏数学概念了，比较难以消化；</p>
+<p><strong>数学规划是运筹学的一个重要分支</strong>，而线性规划又是数学规划中的一部分主要内容。</p>
+<p>整个步骤大致分为：</p>
+<p>1、问题分析；</p>
+<p>2、模型假设；</p>
+<p>3、符号说明；</p>
+<p>4、模型建立；</p>
+<p>5、模型的求解与分析</p>
+<p>6、可行解、可行域；</p>
+<p>7、灵敏度分析；</p>
+<p>通过几个案例很好的阐述了这样一个过程，比如4-5使用python软件计算6个产地8个销地的最小运费问题；</p>
+<p>从决策变量的取值范围来看，整数规划通常可以分为以下几种类型：</p>
+<p>1、纯整数规划；</p>
+<p>2、混合整数规划；</p>
+<p>3、0-1整数规划：主要用于<strong>指派问题、分配任务问题</strong>；</p>
+<h1 id="2020-7-7学习笔记"><a href="#2020-7-7学习笔记" class="headerlink" title="2020.7.7学习笔记"></a>2020.7.7学习笔记</h1><p>今天主要学习非线性规划和多目标规划模型</p>
+<p>​        ==线性规划==的最优解存在，但最优解只能在可行域的边界上达到（特别是在可行域的顶点上达到），且求出的是全局最优解。但是==非线性规划==却没有这样好的性质，其最优解(如果存在)可能在可行域的任意一点达到，而一般非线性规划算法给出的也只能是局部最优解，不能保证是全局最优解。</p>
+<p>​        非线性规划目前还没有适合各种问题的一般算法，各个算法都有其特定的适用范围； </p>
+<p>​        罚函数法：把约束非线性规划问题转化一系列无约束非线性规划问题求解；</p>
+<p>​        定义在有限凸集上的有限个凸函数的非负线性组合仍为凸函数；</p>
+<p>​        ==solver=‘CVXOPT’==进行优化；</p>
+<p>能用图片表示的就不用表格；</p>
+<p>能用表格描述就不用文字描述；</p>
+<p>必须要做灵敏度分析；</p>
+<p>Markowitz建议风险可以用收益的方差(或标准差)来衡量：方差越大，风险越大；在一定条件下，这种方法来衡量风险是合适的；</p>
+<p>于是，一种股票收益的均值衡量的是这种股票的平均收益状况,而收益的方差衡量的是这种股票收益的波动幅度，方差越大则波动越大，收益越不稳定。两种股票收益的协方差表示的则是它们之间的相关程度:<br>1)协方差为0时两者不相关。<br>2)协方差为正表示两者正相关，协方差越大则正相关性越强(越有可能一赚兼赚，一赔俱赔)</p>
+<h1 id="2020-7-8学习笔记"><a href="#2020-7-8学习笔记" class="headerlink" title="2020.7.8学习笔记"></a>2020.7.8学习笔记</h1><p>图论模型是数学建模中常见又重要的一个模型，近几十年来发展的十分活跃，因为图本身的特性，大量的最优化问题都可以抽象成网络模型结构来加以解释、描述和求解。它在建模时，具有直观、易理解、适应性强等特点，已被广泛用于各个领域；</p>
+<p>图重要有以下属性：</p>
+<p>1、顶点 （+ 顶点位置）</p>
+<p>2、边</p>
+<p>3、权值</p>
+<p>在有向图中，从顶点v引出的弧的数目称为v的出度，记为,从顶点v引入的弧的数目称为v的入度；</p>
+<p>对于图的展示，需要用到networkx库的draw函数；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200710160333279.png" alt="image-20200710160333279"></p>
+<p>图包括很多算法， 用于解决不同类型的问题：</p>
+<p>1、最短路径算法：找出途中两个顶点之间的最短路径，常用于解决很多实际的优化问题；该问题下同样可以使用到整数规划、0-1规划模型来解决问题；</p>
+<p>2、最小生成树：常用破圈法来求生成树</p>
+<p>3、关键路径</p>
+<p>4、Dijkstra算法：</p>
+<p>5、Floyd算法；</p>
+<p>论文写作表述越齐全越好</p>
+<p>出弧入弧问题</p>
+<p>写论文一定要写清楚，有时候评委不看题，论文三分写，七分改；</p>
+<p>论文有闪光点</p>
+<p><strong>管道订购和运输问题</strong></p>
+<p>2000数学建模竞赛问题</p>
+<p>要不不供货，供货就要&gt;500并且&lt;最大数量Si</p>
+<p>15个铺设结点   ；</p>
+<p>1、根据钢管厂生产额能力约束或购买限制</p>
+<p>{0}∪[1000,2000]</p>
+<p>2、配送量==需求量，配送量和小于储备量</p>
+<p>3、</p>
+<p>4、非负约束</p>
+<p>把非线性约束转化为线性约束</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200708111351959.png" alt="image-20200708111351959"></p>
+<p>分支定界</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200708111517144.png" alt="image-20200708111517144"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200708111814321.png" alt="image-20200708111814321"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200708111850965.png" alt="image-20200708111850965"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200708112007295.png" alt="image-20200708112007295"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200708112122257.png" alt="image-20200708112122257"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200708112313232.png" alt="image-20200708112313232"></p>
+<p>零阶矩阵结点一个个输入</p>
+<p>python输入比较方便，发现错误很容易修正；</p>
+<p>能打括号的就打括号；</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200708111733509.png" alt="image-20200708111733509"></p>
+<p>数据处理很重要！！！</p>
+<p>现学现卖！！！</p>
+<h1 id="2020-7-9学习笔记"><a href="#2020-7-9学习笔记" class="headerlink" title="2020.7.9学习笔记"></a>2020.7.9学习笔记</h1><p>今天学的多元统计分析，处理多变量问题，变量多-&gt;处理问题复杂，信息重叠；</p>
+<p>一种“降维”的思维方式，跟信息的相关性也有很大的关系；</p>
+<p>拿一个椭圆，a趋近于无穷大和b趋近于无穷大作比较；</p>
+<p>都是对矩阵的运算，矩阵的迹，矩阵的特征向量等；</p>
+<p>在研究实际问题时，主体成分分析的步骤大概可归纳为：</p>
+<p>1、将原始数据标准化；</p>
+<p>2、建立变量的相关系数矩阵；</p>
+<p>3、求特征向量、特征根；</p>
+<p>4、由累计方差贡献率确定主成分的个数；</p>
+<p>软件主要使用SPSS进行主成分分析，因子分析；</p>
+<p>分析主要跟金融、经济的分析相关，课上的例题消化，代码在计算机上实现；</p>
+<h1 id="2020-7-10学习笔记"><a href="#2020-7-10学习笔记" class="headerlink" title="2020.7.10学习笔记"></a>2020.7.10学习笔记</h1><p>今天学的回归分析主要分析事物之间的相关性，得到变量之间的数量变化规律并加以总结反映；</p>
+<p>回归分析主要与线性模型有着很大的联系；</p>
+<p>整个过程大概分以下几部分：<br>1、选择回归模型和回归方程；</p>
+<p>2、回归方程的参数估计和检验；</p>
+<p>3、回归判断</p>
+<p>4、模型验证；</p>
+<p>参数一般用最小二乘法估计；</p>
+<p>多重共线性太强同样导致很多问题：比如回归系数标准误差的估计偏大，造成回归系数置信区间增大，回归系数的准确性和稳定性降低，回归系数检验的结果不显著等；</p>
+<p>经典最小二乘回归，有模型假设，数据未必满足假设，大多数情况下存在多重共线性，需要进行变量选择;</p>
+<p>主成分回归和偏最小二乘回归，不需要考虑多重共线性，不需要进行变量选择，最终是所有变量进入模型。</p>
+<p>当样本量少，变量多且存在多重共线性，且多对多回归时，偏最小二乘回归更有优势。</p>
+<h1 id="2020-7-11学习笔记"><a href="#2020-7-11学习笔记" class="headerlink" title="2020.7.11学习笔记"></a>2020.7.11学习笔记</h1><p>如何有收获的研读一篇优秀论文</p>
+<p>取长补短 分工明确  强强联手</p>
+<p>研究生建模论文： 30+页；</p>
+<p>学习数学模型的描述; (目 标，约束条件)<br>学习模型的建立和求解(算法)<br>试着用求得的数据解释实际问题(量变→质变)</p>
+<p>今天主要讲的<strong>资源优化配置</strong>，如何优化现有资源，合理配置，以便更好地服务社会；—-选址问题</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200712223315129.png" alt="image-20200712223315129"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200712223615527.png" alt="image-20200712223615527"></p>
+<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200712223813487.png" alt="image-20200712223813487"></p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200712223825343.png" alt="image-20200712223825343"></p>
+<p>熟悉并分类算法，求适用性；</p>
+<p>步骤：</p>
+<p>1、遇到问题；</p>
+<p>2、处理问题；</p>
+<p>3、提炼问题；</p>
+<p>4、解决问题（建模）；</p>
+<p>5、求解问题（算法）；</p>
+<h2 id="从论文中学到什么内容？"><a href="#从论文中学到什么内容？" class="headerlink" title="从论文中学到什么内容？"></a>从论文中学到什么内容？</h2><ol>
+<li><strong>找</strong>：找出文中所建立的数学模型，思考自己队建立新的模型；</li>
+<li><strong>读</strong>：读懂文中模型的求解算法（不唯一），试着用其它算法去求解；</li>
+<li><strong>悟</strong>：找出作者队要回答的问题是否得到了较理想的结果；</li>
+<li><strong>用</strong>：是否能对所得到的结果给出可靠性的分析说明；</li>
+<li><strong>思</strong>：如果让我们自己完成，我们会怎么做？</li>
+</ol>
+<h2 id="110警车配置及巡逻方案"><a href="#110警车配置及巡逻方案" class="headerlink" title="110警车配置及巡逻方案"></a>110警车配置及巡逻方案</h2><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200712230350836.png" alt="image-20200712230350836"></p>
+<p>阅读优秀论文的意义：<br>1、学会重述问题（经得起查重）</p>
+<p>2、如何让论文有闪光灯，在几千个队中脱颖而出</p>
+<p>3、怎么选关键词</p>
+<p>4、好的模型、好的结果、独特的思路、好的算法、好的排版；</p>
+<h1 id="2020-7-12学习笔记"><a href="#2020-7-12学习笔记" class="headerlink" title="2020.7.12学习笔记"></a>2020.7.12学习笔记</h1><p>今天主要学的智能算法，对于现代优化算法，可以解决诸多实际问题；</p>
+<p><strong>盲目搜索</strong>：搜索过程中不改变搜索策略，比如：DFS、BFS等等</p>
+<p><strong>启发式搜索</strong>：对搜索过程中的信息进行处理，用来改进搜索策略，找最优化；比如：爬山法、模拟退火、遗传、粒子群、蚁群等；</p>
+<p>贪心算法：以迭代进行寻优；很多启发式算法本质上就是贪心算法+随机算法</p>
+<h2 id="1、爬山法-HC"><a href="#1、爬山法-HC" class="headerlink" title="1、爬山法 HC"></a>1、爬山法 HC</h2><p>​        一种局部择优的贪心搜索算法,其本质上是梯度下降法。该算法每次从当前的节点开始，与周围的邻接点进行比较:若当前节点是最大的,那么返回当前节点作为最大值；若当前节点是较小的,就用最大的邻接点替换当前节点,从而实现不断向山峰的高处攀爬,如此循环往复,直到达到最高点为止；</p>
+<p>​        该算法的主要问题:对初始解(状态)敏感,容易陷入局部最优,即某个节点会比周围任何一个邻接点都大,但这只是局部最优解,并非全局最优解。</p>
+<p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200713110821315.png" alt=""></p>
+<p>起始点的选择非常重要；</p>
+<p>优点：快速收敛于局部最优解；</p>
+<p>缺点：遇到平台无所事从；</p>
+<h2 id="2、随机游走算法-RW"><a href="#2、随机游走算法-RW" class="headerlink" title="2、随机游走算法 RW"></a>2、随机游走算法 RW</h2><p>​    一个操作简单,但是不易陷入局部极小值的方法。是局部搜索算法中最简单的一个,它的基本策略就是每次从当前候选解的邻居中选择一个    更优的进行转移。在二维世界里,如果你一直这样随机游走下去,你还是可能到达你的目的地的,但是如果是三维世界,概率就很低了。维度越高,概率越低；</p>
+<p><strong>起始点</strong>和<strong>步长</strong>对于随机选择算法来说是非常重要！！！</p>
+<p><strong>步长</strong>和<strong>迭代次数</strong>的越大，自然精度越高，所需要的时间也会增加！具体设定要参考特定的应用场所，如果是自动驾驶，要求反应时间很快，那么就不能设大；</p>
+<p>​    基本的随机游走算法对于初始点比较敏感，可以看出 ,当初始点位于最优点附近时,可以很好地达到全局最优点;如果将初始点设置得离最优点较远,则容易陷入局部最优,不一定能达到全局最优点。<br>​    当增大迭代次数以及初始步长之后,函数最终达到了全局最优点。但是迭代次数增加的代价则是运行时间的增加。总得来说，基本的随机游走算法可以很好地达到全局最优点,但是有时会依赖于初始点的选择。</p>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">相关文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\07\09\数学建模培训第二题\" rel="bookmark">数学建模培训第二题</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\2020\07\10\数学建模培训第四题\" rel="bookmark">数学建模培训第四题</a></div>
+    </li>
+  </ul>
+
+        <div class="reward-container">
+  <div>You can reward me here. Thank you!</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="Mr.L 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Mr.L 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Mr.L
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://luweir.github.io/2020/07/13/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E5%9F%B9%E8%AE%AD%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="数学建模培训学习笔记">http://luweir.github.io/2020/07/13/数学建模培训学习笔记/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" rel="tag"><i class="fa fa-tag"></i> 数学建模</a>
+              <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"><i class="fa fa-tag"></i> 笔记</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/10/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E5%9F%B9%E8%AE%AD%E7%AC%AC%E5%9B%9B%E9%A2%98/" rel="prev" title="数学建模培训第四题">
+      <i class="fa fa-chevron-left"></i> 数学建模培训第四题
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-7-5学习笔记"><span class="nav-text">2020.7.5学习笔记</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-7-6学习笔记"><span class="nav-text">2020.7.6学习笔记</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-7-7学习笔记"><span class="nav-text">2020.7.7学习笔记</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-7-8学习笔记"><span class="nav-text">2020.7.8学习笔记</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-7-9学习笔记"><span class="nav-text">2020.7.9学习笔记</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-7-10学习笔记"><span class="nav-text">2020.7.10学习笔记</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-7-11学习笔记"><span class="nav-text">2020.7.11学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#从论文中学到什么内容？"><span class="nav-text">从论文中学到什么内容？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#110警车配置及巡逻方案"><span class="nav-text">110警车配置及巡逻方案</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2020-7-12学习笔记"><span class="nav-text">2020.7.12学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、爬山法-HC"><span class="nav-text">1、爬山法 HC</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、随机游走算法-RW"><span class="nav-text">2、随机游走算法 RW</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Mr.L"
+      src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/未标题-1.png">
+  <p class="site-author-name" itemprop="name">Mr.L</p>
+  <div class="site-description" itemprop="description">坚持自己所坚持！热爱自己所热爱！</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Luweir" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Luweir" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/463047622@qq.com" title="E-Mail → 463047622@qq.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/3708965564/profile?topnav=1&wvr=6" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;3708965564&#x2F;profile?topnav&#x3D;1&amp;wvr&#x3D;6" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://blog.csdn.net/wyll19980812" title="https:&#x2F;&#x2F;blog.csdn.net&#x2F;wyll19980812" rel="noopener" target="_blank">Luweir's CSDN</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mr.L</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/canvas_lines.min.js"></script>
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'VcFjReOVbkfKap6tylFW8d5V-gzGzoHsz',
+      appKey     : 'p2biokb0TmayMIoXING3pTHy',
+      placeholder: "Please write your suggestion!",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+  
+</body>
+</html>
