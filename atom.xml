@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>tacoyu&#39;Blog</title>
+  <title>Luweir&#39;Blog</title>
   
   <subtitle>一旦你知道失败是什么感觉，就会决心追逐成功！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://tacoyu23.github.io/"/>
+  <link href="http://luweir.github.io/"/>
   <updated>2020-07-10T06:13:42.105Z</updated>
-  <id>http://tacoyu23.github.io/</id>
+  <id>http://luweir.github.io/</id>
   
   <author>
     <name>Mr.L</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>数学建模培训第四题</title>
-    <link href="http://tacoyu23.github.io/2020/07/10/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E5%9F%B9%E8%AE%AD%E7%AC%AC%E5%9B%9B%E9%A2%98/"/>
-    <id>http://tacoyu23.github.io/2020/07/10/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E5%9F%B9%E8%AE%AD%E7%AC%AC%E5%9B%9B%E9%A2%98/</id>
+    <link href="http://luweir.github.io/2020/07/10/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E5%9F%B9%E8%AE%AD%E7%AC%AC%E5%9B%9B%E9%A2%98/"/>
+    <id>http://luweir.github.io/2020/07/10/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E5%9F%B9%E8%AE%AD%E7%AC%AC%E5%9B%9B%E9%A2%98/</id>
     <published>2020-07-10T02:51:00.000Z</published>
     <updated>2020-07-10T06:13:42.105Z</updated>
     
@@ -32,17 +32,17 @@
     </summary>
     
     
-      <category term="Math Models" scheme="http://tacoyu23.github.io/categories/Math-Models/"/>
+      <category term="Math Models" scheme="http://Luweir.github.io/categories/Math-Models/"/>
     
     
-      <category term="数学建模" scheme="http://tacoyu23.github.io/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
+      <category term="数学建模" scheme="http://Luweir.github.io/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
     
   </entry>
   
   <entry>
     <title>数学建模培训第二题</title>
-    <link href="http://tacoyu23.github.io/2020/07/09/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E5%9F%B9%E8%AE%AD%E7%AC%AC%E4%BA%8C%E9%A2%98/"/>
-    <id>http://tacoyu23.github.io/2020/07/09/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E5%9F%B9%E8%AE%AD%E7%AC%AC%E4%BA%8C%E9%A2%98/</id>
+    <link href="http://luweir.github.io/2020/07/09/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E5%9F%B9%E8%AE%AD%E7%AC%AC%E4%BA%8C%E9%A2%98/"/>
+    <id>http://luweir.github.io/2020/07/09/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1%E5%9F%B9%E8%AE%AD%E7%AC%AC%E4%BA%8C%E9%A2%98/</id>
     <published>2020-07-09T01:43:00.000Z</published>
     <updated>2020-07-10T06:13:06.037Z</updated>
     
@@ -55,17 +55,17 @@
     </summary>
     
     
-      <category term="Math Models" scheme="http://tacoyu23.github.io/categories/Math-Models/"/>
+      <category term="Math Models" scheme="http://Luweir.github.io/categories/Math-Models/"/>
     
     
-      <category term="数学建模" scheme="http://tacoyu23.github.io/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
+      <category term="数学建模" scheme="http://Luweir.github.io/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
     
   </entry>
   
   <entry>
     <title>Mr.L的工具栏</title>
-    <link href="http://tacoyu23.github.io/2020/07/04/Mr.L%E7%9A%84%E5%B7%A5%E5%85%B7%E6%A0%8F/"/>
-    <id>http://tacoyu23.github.io/2020/07/04/Mr.L%E7%9A%84%E5%B7%A5%E5%85%B7%E6%A0%8F/</id>
+    <link href="http://luweir.github.io/2020/07/04/Mr.L%E7%9A%84%E5%B7%A5%E5%85%B7%E6%A0%8F/"/>
+    <id>http://luweir.github.io/2020/07/04/Mr.L%E7%9A%84%E5%B7%A5%E5%85%B7%E6%A0%8F/</id>
     <published>2020-07-03T23:52:00.000Z</published>
     <updated>2020-07-04T00:03:47.988Z</updated>
     
@@ -78,19 +78,19 @@
     </summary>
     
     
-      <category term="Privacy" scheme="http://tacoyu23.github.io/categories/Privacy/"/>
+      <category term="Privacy" scheme="http://Luweir.github.io/categories/Privacy/"/>
     
     
-      <category term="Tools" scheme="http://tacoyu23.github.io/tags/Tools/"/>
+      <category term="Tools" scheme="http://Luweir.github.io/tags/Tools/"/>
     
   </entry>
   
   <entry>
     <title>Module</title>
-    <link href="http://tacoyu23.github.io/2020/07/04/Module/"/>
-    <id>http://tacoyu23.github.io/2020/07/04/Module/</id>
+    <link href="http://luweir.github.io/2020/07/04/A%20Module/"/>
+    <id>http://luweir.github.io/2020/07/04/A%20Module/</id>
     <published>2020-07-03T23:37:00.000Z</published>
-    <updated>2020-07-03T23:38:52.715Z</updated>
+    <updated>2020-07-10T07:35:25.462Z</updated>
     
     <summary type="html">
     
@@ -102,12 +102,12 @@
   
   <entry>
     <title>安装cvspy包</title>
-    <link href="http://tacoyu23.github.io/2020/07/03/%E5%AE%89%E8%A3%85cvspy%E5%8C%85/"/>
-    <id>http://tacoyu23.github.io/2020/07/03/%E5%AE%89%E8%A3%85cvspy%E5%8C%85/</id>
+    <link href="http://luweir.github.io/2020/07/03/%E5%AE%89%E8%A3%85cvspy%E5%8C%85/"/>
+    <id>http://luweir.github.io/2020/07/03/%E5%AE%89%E8%A3%85cvspy%E5%8C%85/</id>
     <published>2020-07-03T15:04:20.822Z</published>
-    <updated>2020-07-03T23:54:17.804Z</updated>
+    <updated>2020-07-10T07:17:03.592Z</updated>
     
-    <content type="html"><![CDATA[<p>下载压缩包：链接：<a href="https://pan.baidu.com/s/1wxMO5IN0R9S8fZnoGv75XQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1wxMO5IN0R9S8fZnoGv75XQ</a>  ；提取码：svrc</p><p>注意版本要对应，我用的python3.7.2；不同版本参考这篇文章：<a href="https://blog.csdn.net/qq_36477513/article/details/104779850" target="_blank" rel="noopener">Python下载安装第三方库cvxpy包</a></p><p><strong>1、将压缩包解压(记住解压的位置，我是解压到的桌面)</strong></p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703153111851.png" alt="image-20200703153111851"></p><p>里面是这些文件：</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703153134772.png" alt="image-20200703153134772"></p><p><strong>2、在文件所在的文件夹中打开DOC界面（win10直接在当前文件夹空白处按住shift，右键打开powershell窗口）</strong></p><h2 id=""><a href="#" class="headerlink" title=""></a><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703153318636.png" alt="image-20200703153318636"></h2><p>然后依次安装下列包</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703153749989.png" alt="image-20200703153749989"></p><p>在命令行中依次输入<code>pip install xxxxx.whl</code>  </p><p>xxxxx.whl就是上面说的包的全名！ 一定要复制全名 加后缀；</p><p>类似这个：</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703154007070.png" alt="image-20200703154007070"></p><p>每安装一个 下面就有进度，成功的话最后一句是<code>successfully installed  xxxxx-xx</code></p><p>最后安装cvxpy后</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703154149223.png" alt="image-20200703154149223"></p><p><strong>3、在win + R ，输入cmd</strong></p><p> 然后再命令行中先输入 <code>python</code> 再输入<code>import cvxpy</code></p><p>如果是下面这样 则表示成功；</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703154413352.png" alt="image-20200703154413352"></p><p>失败的话它会显示 <strong>找不到 名字为cvspy的module</strong></p>]]></content>
+    <content type="html"><![CDATA[<p>下载压缩包：链接：<a href="https://pan.baidu.com/s/1wxMO5IN0R9S8fZnoGv75XQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1wxMO5IN0R9S8fZnoGv75XQ</a>  ；提取码：svrc</p><p>注意版本要对应，我用的python3.7.2；不同版本参考这篇文章：<a href="https://blog.csdn.net/qq_36477513/article/details/104779850" target="_blank" rel="noopener">Python下载安装第三方库cvxpy包</a></p><p><strong>1、将压缩包解压(记住解压的位置，我是解压到的桌面)</strong></p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703153111851.png" alt="image-20200703153111851"></p><p>里面是这些文件：</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703153134772.png" alt="image-20200703153134772"></p><p><strong>2、在文件所在的文件夹中打开DOC界面（win10直接在当前文件夹空白处按住shift，右键打开powershell窗口）</strong></p><h2 id=""><a href="#" class="headerlink" title=""></a><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703153318636.png" alt="image-20200703153318636"></h2><p>然后依次安装下列包</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703153749989.png" alt="image-20200703153749989"></p><p>在命令行中依次输入<code>pip install xxxxx.whl</code>  </p><p>xxxxx.whl就是上面说的包的全名！ 一定要复制全名 加后缀；</p><p>类似这个：</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703154007070.png" alt="image-20200703154007070"></p><p>每安装一个 下面就有进度，成功的话最后一句是<code>successfully installed  xxxxx-xx</code></p><p>最后安装cvxpy后</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703154149223.png" alt="image-20200703154149223"></p><p><strong>3、在win + R ，输入cmd</strong></p><p> 然后再命令行中先输入 <code>python</code> 再输入<code>import cvxpy</code></p><p>如果是下面这样 则表示成功；</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200703154413352.png" alt="image-20200703154413352"></p><p>失败的话它会显示 <strong>找不到 名字为cvspy的module</strong>windows下安装pandoc并通过Typora导出pdf和word详细攻略</p>]]></content>
     
     <summary type="html">
     
@@ -116,19 +116,19 @@
     </summary>
     
     
-      <category term="Software" scheme="http://tacoyu23.github.io/categories/Software/"/>
+      <category term="Software" scheme="http://Luweir.github.io/categories/Software/"/>
     
     
-      <category term="Python" scheme="http://tacoyu23.github.io/tags/Python/"/>
+      <category term="Python" scheme="http://Luweir.github.io/tags/Python/"/>
     
-      <category term="cvspy" scheme="http://tacoyu23.github.io/tags/cvspy/"/>
+      <category term="cvspy" scheme="http://Luweir.github.io/tags/cvspy/"/>
     
   </entry>
   
   <entry>
     <title>Google浏览器安装Google访问助手</title>
-    <link href="http://tacoyu23.github.io/2020/07/03/Google%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AE%89%E8%A3%85%E8%AE%BF%E9%97%AE%E5%8A%A9%E6%89%8B/"/>
-    <id>http://tacoyu23.github.io/2020/07/03/Google%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AE%89%E8%A3%85%E8%AE%BF%E9%97%AE%E5%8A%A9%E6%89%8B/</id>
+    <link href="http://luweir.github.io/2020/07/03/Google%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AE%89%E8%A3%85%E8%AE%BF%E9%97%AE%E5%8A%A9%E6%89%8B/"/>
+    <id>http://luweir.github.io/2020/07/03/Google%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AE%89%E8%A3%85%E8%AE%BF%E9%97%AE%E5%8A%A9%E6%89%8B/</id>
     <published>2020-07-03T15:04:13.944Z</published>
     <updated>2020-07-03T15:20:55.074Z</updated>
     
@@ -141,15 +141,15 @@
     </summary>
     
     
-      <category term="Software" scheme="http://tacoyu23.github.io/categories/Software/"/>
+      <category term="Software" scheme="http://Luweir.github.io/categories/Software/"/>
     
     
   </entry>
   
   <entry>
     <title>明天冲乐高机器人面试</title>
-    <link href="http://tacoyu23.github.io/2020/07/03/%E6%98%8E%E5%A4%A9%E5%86%B2%E4%B9%90%E9%AB%98%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%9D%A2%E8%AF%95/"/>
-    <id>http://tacoyu23.github.io/2020/07/03/%E6%98%8E%E5%A4%A9%E5%86%B2%E4%B9%90%E9%AB%98%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%9D%A2%E8%AF%95/</id>
+    <link href="http://luweir.github.io/2020/07/03/%E6%98%8E%E5%A4%A9%E5%86%B2%E4%B9%90%E9%AB%98%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%9D%A2%E8%AF%95/"/>
+    <id>http://luweir.github.io/2020/07/03/%E6%98%8E%E5%A4%A9%E5%86%B2%E4%B9%90%E9%AB%98%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%9D%A2%E8%AF%95/</id>
     <published>2020-07-03T15:04:00.000Z</published>
     <updated>2020-07-03T15:12:29.731Z</updated>
     
@@ -162,17 +162,17 @@
     </summary>
     
     
-      <category term="Privacy" scheme="http://tacoyu23.github.io/categories/Privacy/"/>
+      <category term="Privacy" scheme="http://Luweir.github.io/categories/Privacy/"/>
     
     
-      <category term="记录" scheme="http://tacoyu23.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
+      <category term="记录" scheme="http://Luweir.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>Back from JiangSu</title>
-    <link href="http://tacoyu23.github.io/2020/07/02/Back%20from%20JiangSu/"/>
-    <id>http://tacoyu23.github.io/2020/07/02/Back%20from%20JiangSu/</id>
+    <link href="http://luweir.github.io/2020/07/02/Back%20from%20JiangSu/"/>
+    <id>http://luweir.github.io/2020/07/02/Back%20from%20JiangSu/</id>
     <published>2020-07-02T15:15:02.000Z</published>
     <updated>2020-07-03T02:25:47.812Z</updated>
     
@@ -185,17 +185,17 @@
     </summary>
     
     
-      <category term="Privacy" scheme="http://tacoyu23.github.io/categories/Privacy/"/>
+      <category term="Privacy" scheme="http://Luweir.github.io/categories/Privacy/"/>
     
     
-      <category term="记录" scheme="http://tacoyu23.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
+      <category term="记录" scheme="http://Luweir.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>位运算的巧妙之处</title>
-    <link href="http://tacoyu23.github.io/2020/06/30/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%9A%84%E5%B7%A7%E5%A6%99%E4%B9%8B%E5%A4%84/"/>
-    <id>http://tacoyu23.github.io/2020/06/30/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%9A%84%E5%B7%A7%E5%A6%99%E4%B9%8B%E5%A4%84/</id>
+    <link href="http://luweir.github.io/2020/06/30/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%9A%84%E5%B7%A7%E5%A6%99%E4%B9%8B%E5%A4%84/"/>
+    <id>http://luweir.github.io/2020/06/30/%E4%BD%8D%E8%BF%90%E7%AE%97%E7%9A%84%E5%B7%A7%E5%A6%99%E4%B9%8B%E5%A4%84/</id>
     <published>2020-06-30T05:59:59.000Z</published>
     <updated>2020-06-30T07:47:16.240Z</updated>
     
@@ -208,17 +208,17 @@
     </summary>
     
     
-      <category term="Algorithm" scheme="http://tacoyu23.github.io/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="http://Luweir.github.io/categories/Algorithm/"/>
     
     
-      <category term="Bit" scheme="http://tacoyu23.github.io/tags/Bit/"/>
+      <category term="Bit" scheme="http://Luweir.github.io/tags/Bit/"/>
     
   </entry>
   
   <entry>
     <title>十大经典排序算法C++实现及总结</title>
-    <link href="http://tacoyu23.github.io/2020/06/30/%E5%8D%81%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95C-%E5%AE%9E%E7%8E%B0%E5%8F%8A%E6%80%BB%E7%BB%93/"/>
-    <id>http://tacoyu23.github.io/2020/06/30/%E5%8D%81%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95C-%E5%AE%9E%E7%8E%B0%E5%8F%8A%E6%80%BB%E7%BB%93/</id>
+    <link href="http://luweir.github.io/2020/06/30/%E5%8D%81%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95C-%E5%AE%9E%E7%8E%B0%E5%8F%8A%E6%80%BB%E7%BB%93/"/>
+    <id>http://luweir.github.io/2020/06/30/%E5%8D%81%E5%A4%A7%E7%BB%8F%E5%85%B8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95C-%E5%AE%9E%E7%8E%B0%E5%8F%8A%E6%80%BB%E7%BB%93/</id>
     <published>2020-06-30T05:58:23.000Z</published>
     <updated>2020-06-30T05:59:43.749Z</updated>
     
@@ -231,17 +231,17 @@
     </summary>
     
     
-      <category term="Algorithm" scheme="http://tacoyu23.github.io/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="http://Luweir.github.io/categories/Algorithm/"/>
     
     
-      <category term="Sort" scheme="http://tacoyu23.github.io/tags/Sort/"/>
+      <category term="Sort" scheme="http://Luweir.github.io/tags/Sort/"/>
     
   </entry>
   
   <entry>
     <title>多维数组和矩阵</title>
-    <link href="http://tacoyu23.github.io/2020/06/30/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E5%92%8C%E7%9F%A9%E9%98%B5/"/>
-    <id>http://tacoyu23.github.io/2020/06/30/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E5%92%8C%E7%9F%A9%E9%98%B5/</id>
+    <link href="http://luweir.github.io/2020/06/30/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E5%92%8C%E7%9F%A9%E9%98%B5/"/>
+    <id>http://luweir.github.io/2020/06/30/%E5%A4%9A%E7%BB%B4%E6%95%B0%E7%BB%84%E5%92%8C%E7%9F%A9%E9%98%B5/</id>
     <published>2020-06-30T05:56:53.000Z</published>
     <updated>2020-06-30T05:57:59.381Z</updated>
     
@@ -254,17 +254,17 @@
     </summary>
     
     
-      <category term="Algorithm" scheme="http://tacoyu23.github.io/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="http://Luweir.github.io/categories/Algorithm/"/>
     
     
-      <category term="数组" scheme="http://tacoyu23.github.io/tags/%E6%95%B0%E7%BB%84/"/>
+      <category term="数组" scheme="http://Luweir.github.io/tags/%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   
   <entry>
     <title>递归</title>
-    <link href="http://tacoyu23.github.io/2020/06/30/%E9%80%92%E5%BD%92/"/>
-    <id>http://tacoyu23.github.io/2020/06/30/%E9%80%92%E5%BD%92/</id>
+    <link href="http://luweir.github.io/2020/06/30/%E9%80%92%E5%BD%92/"/>
+    <id>http://luweir.github.io/2020/06/30/%E9%80%92%E5%BD%92/</id>
     <published>2020-06-30T05:54:39.000Z</published>
     <updated>2020-06-30T05:57:01.447Z</updated>
     
@@ -277,17 +277,17 @@
     </summary>
     
     
-      <category term="Algorithm" scheme="http://tacoyu23.github.io/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="http://Luweir.github.io/categories/Algorithm/"/>
     
     
-      <category term="递归" scheme="http://tacoyu23.github.io/tags/%E9%80%92%E5%BD%92/"/>
+      <category term="递归" scheme="http://Luweir.github.io/tags/%E9%80%92%E5%BD%92/"/>
     
   </entry>
   
   <entry>
     <title>心理学-影响力</title>
-    <link href="http://tacoyu23.github.io/2020/06/30/%E5%BF%83%E7%90%86%E5%AD%A6-%E5%BD%B1%E5%93%8D%E5%8A%9B/"/>
-    <id>http://tacoyu23.github.io/2020/06/30/%E5%BF%83%E7%90%86%E5%AD%A6-%E5%BD%B1%E5%93%8D%E5%8A%9B/</id>
+    <link href="http://luweir.github.io/2020/06/30/%E5%BF%83%E7%90%86%E5%AD%A6-%E5%BD%B1%E5%93%8D%E5%8A%9B/"/>
+    <id>http://luweir.github.io/2020/06/30/%E5%BF%83%E7%90%86%E5%AD%A6-%E5%BD%B1%E5%93%8D%E5%8A%9B/</id>
     <published>2020-06-30T02:26:01.000Z</published>
     <updated>2020-06-30T02:27:43.324Z</updated>
     
@@ -300,17 +300,17 @@
     </summary>
     
     
-      <category term="课外读物" scheme="http://tacoyu23.github.io/categories/%E8%AF%BE%E5%A4%96%E8%AF%BB%E7%89%A9/"/>
+      <category term="课外读物" scheme="http://Luweir.github.io/categories/%E8%AF%BE%E5%A4%96%E8%AF%BB%E7%89%A9/"/>
     
     
-      <category term="心理学" scheme="http://tacoyu23.github.io/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+      <category term="心理学" scheme="http://Luweir.github.io/tags/%E5%BF%83%E7%90%86%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>PS技术大杂烩</title>
-    <link href="http://tacoyu23.github.io/2020/06/30/PS%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/"/>
-    <id>http://tacoyu23.github.io/2020/06/30/PS%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/</id>
+    <link href="http://luweir.github.io/2020/06/30/PS%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/"/>
+    <id>http://luweir.github.io/2020/06/30/PS%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/</id>
     <published>2020-06-30T02:22:17.000Z</published>
     <updated>2020-06-30T02:25:10.295Z</updated>
     
@@ -323,17 +323,17 @@
     </summary>
     
     
-      <category term="Software" scheme="http://tacoyu23.github.io/categories/Software/"/>
+      <category term="Software" scheme="http://Luweir.github.io/categories/Software/"/>
     
     
-      <category term="PS" scheme="http://tacoyu23.github.io/tags/PS/"/>
+      <category term="PS" scheme="http://Luweir.github.io/tags/PS/"/>
     
   </entry>
   
   <entry>
     <title>计算机方向及导师选择有感</title>
-    <link href="http://tacoyu23.github.io/2020/06/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%96%B9%E5%90%91%E5%8F%8A%E5%AF%BC%E5%B8%88%E9%80%89%E6%8B%A9%E6%9C%89%E6%84%9F/"/>
-    <id>http://tacoyu23.github.io/2020/06/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%96%B9%E5%90%91%E5%8F%8A%E5%AF%BC%E5%B8%88%E9%80%89%E6%8B%A9%E6%9C%89%E6%84%9F/</id>
+    <link href="http://luweir.github.io/2020/06/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%96%B9%E5%90%91%E5%8F%8A%E5%AF%BC%E5%B8%88%E9%80%89%E6%8B%A9%E6%9C%89%E6%84%9F/"/>
+    <id>http://luweir.github.io/2020/06/29/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%96%B9%E5%90%91%E5%8F%8A%E5%AF%BC%E5%B8%88%E9%80%89%E6%8B%A9%E6%9C%89%E6%84%9F/</id>
     <published>2020-06-29T11:03:15.000Z</published>
     <updated>2020-06-30T01:55:11.444Z</updated>
     
@@ -346,17 +346,17 @@
     </summary>
     
     
-      <category term="Privacy" scheme="http://tacoyu23.github.io/categories/Privacy/"/>
+      <category term="Privacy" scheme="http://Luweir.github.io/categories/Privacy/"/>
     
     
-      <category term="记录" scheme="http://tacoyu23.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
+      <category term="记录" scheme="http://Luweir.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>C++面试题</title>
-    <link href="http://tacoyu23.github.io/2020/06/29/C++%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
-    <id>http://tacoyu23.github.io/2020/06/29/C++%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
+    <link href="http://luweir.github.io/2020/06/29/C++%E9%9D%A2%E8%AF%95%E9%A2%98/"/>
+    <id>http://luweir.github.io/2020/06/29/C++%E9%9D%A2%E8%AF%95%E9%A2%98/</id>
     <published>2020-06-29T03:50:22.000Z</published>
     <updated>2020-06-29T07:30:28.651Z</updated>
     
@@ -369,19 +369,19 @@
     </summary>
     
     
-      <category term="C&amp;&amp;C++" scheme="http://tacoyu23.github.io/categories/C-C/"/>
+      <category term="C&amp;&amp;C++" scheme="http://Luweir.github.io/categories/C-C/"/>
     
     
-      <category term="C&amp;&amp;C++" scheme="http://tacoyu23.github.io/tags/C-C/"/>
+      <category term="C&amp;&amp;C++" scheme="http://Luweir.github.io/tags/C-C/"/>
     
-      <category term="面试" scheme="http://tacoyu23.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
+      <category term="面试" scheme="http://Luweir.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>tacoyu23的建站史</title>
-    <link href="http://tacoyu23.github.io/2020/06/28/tacoyu%E7%9A%84%E5%BB%BA%E7%AB%99%E5%8F%B2/"/>
-    <id>http://tacoyu23.github.io/2020/06/28/tacoyu%E7%9A%84%E5%BB%BA%E7%AB%99%E5%8F%B2/</id>
+    <link href="http://luweir.github.io/2020/06/28/tacoyu%E7%9A%84%E5%BB%BA%E7%AB%99%E5%8F%B2/"/>
+    <id>http://luweir.github.io/2020/06/28/tacoyu%E7%9A%84%E5%BB%BA%E7%AB%99%E5%8F%B2/</id>
     <published>2020-06-28T12:20:12.000Z</published>
     <updated>2020-06-30T14:00:20.936Z</updated>
     
@@ -394,17 +394,17 @@
     </summary>
     
     
-      <category term="Privacy" scheme="http://tacoyu23.github.io/categories/Privacy/"/>
+      <category term="Privacy" scheme="http://Luweir.github.io/categories/Privacy/"/>
     
     
-      <category term="记录" scheme="http://tacoyu23.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
+      <category term="记录" scheme="http://Luweir.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
   <entry>
     <title>Hexo搭建Next进行美化详解</title>
-    <link href="http://tacoyu23.github.io/2020/06/28/Hexo%E6%90%AD%E5%BB%BANext%E8%BF%9B%E8%A1%8C%E7%BE%8E%E5%8C%96%E8%AF%A6%E8%A7%A3/"/>
-    <id>http://tacoyu23.github.io/2020/06/28/Hexo%E6%90%AD%E5%BB%BANext%E8%BF%9B%E8%A1%8C%E7%BE%8E%E5%8C%96%E8%AF%A6%E8%A7%A3/</id>
+    <link href="http://luweir.github.io/2020/06/28/Hexo%E6%90%AD%E5%BB%BANext%E8%BF%9B%E8%A1%8C%E7%BE%8E%E5%8C%96%E8%AF%A6%E8%A7%A3/"/>
+    <id>http://luweir.github.io/2020/06/28/Hexo%E6%90%AD%E5%BB%BANext%E8%BF%9B%E8%A1%8C%E7%BE%8E%E5%8C%96%E8%AF%A6%E8%A7%A3/</id>
     <published>2020-06-28T09:24:22.000Z</published>
     <updated>2020-06-29T14:46:41.249Z</updated>
     
@@ -417,21 +417,21 @@
     </summary>
     
     
-      <category term="Github" scheme="http://tacoyu23.github.io/categories/Github/"/>
+      <category term="Github" scheme="http://Luweir.github.io/categories/Github/"/>
     
     
-      <category term="Github" scheme="http://tacoyu23.github.io/tags/Github/"/>
+      <category term="Github" scheme="http://Luweir.github.io/tags/Github/"/>
     
-      <category term="Hexo" scheme="http://tacoyu23.github.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://Luweir.github.io/tags/Hexo/"/>
     
-      <category term="Next" scheme="http://tacoyu23.github.io/tags/Next/"/>
+      <category term="Next" scheme="http://Luweir.github.io/tags/Next/"/>
     
   </entry>
   
   <entry>
     <title>Github的介绍与使用</title>
-    <link href="http://tacoyu23.github.io/2020/06/28/Github%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
-    <id>http://tacoyu23.github.io/2020/06/28/Github%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
+    <link href="http://luweir.github.io/2020/06/28/Github%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+    <id>http://luweir.github.io/2020/06/28/Github%E4%BB%8B%E7%BB%8D%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
     <published>2020-06-27T19:20:12.000Z</published>
     <updated>2020-06-29T12:39:15.578Z</updated>
     
@@ -444,7 +444,7 @@
     </summary>
     
     
-      <category term="Github" scheme="http://tacoyu23.github.io/categories/Github/"/>
+      <category term="Github" scheme="http://Luweir.github.io/categories/Github/"/>
     
     
   </entry>
