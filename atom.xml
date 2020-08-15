@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://luweir.github.io/"/>
-  <updated>2020-07-17T18:15:07.710Z</updated>
+  <updated>2020-08-14T16:57:46.373Z</updated>
   <id>http://luweir.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Idea永久破解</title>
+    <link href="http://luweir.github.io/2020/08/15/Idea%E6%B0%B8%E4%B9%85%E7%A0%B4%E8%A7%A3/"/>
+    <id>http://luweir.github.io/2020/08/15/Idea%E6%B0%B8%E4%B9%85%E7%A0%B4%E8%A7%A3/</id>
+    <published>2020-08-14T16:58:13.910Z</published>
+    <updated>2020-08-14T16:57:46.373Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1、下载安装IntelliJ-IDEA"><a href="#1、下载安装IntelliJ-IDEA" class="headerlink" title="1、下载安装IntelliJ IDEA"></a>1、下载安装IntelliJ IDEA</h1><h1 id="2、下载破解压缩包"><a href="#2、下载破解压缩包" class="headerlink" title="2、下载破解压缩包"></a>2、下载破解压缩包</h1><p>链接: <a href="https://pan.baidu.com/s/1s6tiktsNDAOSxvb9WCPH_w" target="_blank" rel="noopener">https://pan.baidu.com/s/1s6tiktsNDAOSxvb9WCPH_w</a> 提取码: 2iyt</p><p>解压后将 lib 文件夹中的 jetbrains-agent.jar 复制在IDEA的安装目录中的lib目录下；</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200815004555134.png" alt="image-20200815004555134"></p><h1 id="3、破解"><a href="#3、破解" class="headerlink" title="3、破解"></a>3、破解</h1><p>help中打开此项：</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200815005444698.png" alt="image-20200815005444698"></p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200815005345408.png" alt="image-20200815005345408"></p><p>输入以下代码：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-javaagent:你的目录\jetbrains-agent.jar</span><br></pre></td></tr></table></figure><p>help中打开此项进行注册：</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200815005557494.png" alt="image-20200815005557494"></p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/image-20200815005707072.png" alt="image-20200815005707072"></p><p>输入以下激活码：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3AGXEJXFK9-eyJsaWNlbnNlSWQiOiIzQUdYRUpYRks5IiwibGljZW5zZWVOYW1lIjoiaHR0cHM6Ly96aGlsZS5pbyIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiIiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkFDIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9LHsiY29kZSI6IkRQTiIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJQUyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJHTyIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJETSIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJDTCIsImZhbGxiYWNrRGF0ZSI6IjIwODktMDctMDciLCJwYWlkVXBUbyI6IjIwODktMDctMDcifSx7ImNvZGUiOiJSUzAiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUkMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUkQiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUEMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUk0iLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiV1MiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiREIiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiREMiLCJmYWxsYmFja0RhdGUiOiIyMDg5LTA3LTA3IiwicGFpZFVwVG8iOiIyMDg5LTA3LTA3In0seyJjb2RlIjoiUlNVIiwiZmFsbGJhY2tEYXRlIjoiMjA4OS0wNy0wNyIsInBhaWRVcFRvIjoiMjA4OS0wNy0wNyJ9XSwiaGFzaCI6IjEyNzk2ODc3LzAiLCJncmFjZVBlcmlvZERheXMiOjcsImF1dG9Qcm9sb25nYXRlZCI6ZmFsc2UsImlzQXV0b1Byb2xvbmdhdGVkIjpmYWxzZX0&#x3D;-WGTHs6XpDhr+uumvbwQPOdlxWnQwgnGaL4eRnlpGKApEEkJyYvNEuPWBSrQkPmVpim&#x2F;8Sab6HV04Dw3IzkJT0yTc29sPEXBf69+7y6Jv718FaJu4MWfsAk&#x2F;ZGtNIUOczUQ0iGKKnSSsfQ&#x2F;3UoMv0q&#x2F;yJcfvj+me5Zd&#x2F;gfaisCCMUaGjB&#x2F;lWIPpEPzblDtVJbRexB1MALrLCEoDv3ujcPAZ7xWb54DiZwjYhQvQ+CvpNNF2jeTku7lbm5v+BoDsdeRq7YBt9ANLUKPr2DahcaZ4gctpHZXhG96IyKx232jYq9jQrFDbQMtVr3E+GsCekMEWSD&#x2F;&#x2F;dLT+HuZdc1sAIYrw&#x3D;&#x3D;-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ndaik1GD0nyTdqkZgURQZGW+RGxCdBITPXIwpjhhaD0SXGa4XSZBEBoiPdY6XV6pOfUJeyfi9dXsY4MmT0D+sKoST3rSw96xaf9FXPvOjn4prMTdj3Ji3CyQrGWeQU2nzYqFrp1QYNLAbaViHRKuJrYHI6GCvqCbJe0LQ8qqUiVMA9wG&#x2F;PQwScpNmTF9Kp2Iej+Z5OUxF33zzm+vg&#x2F;nYV31HLF7fJUAplI&#x2F;1nM+ZG8K+AXWgYKChtknl3sW9PCQa3a3imPL9GVToUNxc0wcuTil8mqveWcSQCHYxsIaUajWLpFzoO2AhK4mfYBSStAqEjoXRTuj17mo8Q6M2SHOcwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl&#x2F;GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQBonMu8oa3vmNAa4RQP8gPGlX3SQaA3WCRUAj6Zrlk8AesKV1YSkh5D2l+yUk6njysgzfr1bIR5xF8eup5xXc4&#x2F;G7NtVYRSMvrd6rfQcHOyK5UFJLm+8utmyMIDrZOzLQuTsT8NxFpbCVCfV5wNRu4rChrCuArYVGaKbmp9ymkw1PU6+HoO5i2wU3ikTmRv8IRjrlSStyNzXpnPTwt7bja19ousk56r40SmlmC04GdDHErr0ei2UbjUua5kw71Qn9g02tL9fERI2sSRjQrvPbn9INwRWl5+k05mlKekbtbu2ev2woJFZK4WEXAd&#x2F;GaAdeZZdumv8T2idDFL7cAirJwcrbfpawPeXr52oKTPnXfi0l5+g9Gnt&#x2F;wfiXCrPElX6ycTR6iL3GC2VR4jTz6YatT4Ntz59&#x2F;THOT7NJQhr6AyLkhhJCdkzE2cob&#x2F;KouVp4ivV7Q3Fc6HX7eepHAAF&#x2F;DpxwgOrg9smX6coXLgfp0b1RU2u&#x2F;tUNID04rpNxTMueTtrT8WSskqvaJd3RH8r7cnRj6Y2hltkja82HlpDURDxDTRvv+krbwMr26SB&#x2F;40BjpMUrDRCeKuiBahC0DCoU&#x2F;4+ze1l94wVUhdkCfL0GpJrMSCDEK+XEurU18Hb7WT+ThXbkdl6VpFdHsRvqAnhR2g4b+Qzgidmuky5NUZVfEaZqV&#x2F;g&#x3D;&#x3D;</span><br></pre></td></tr></table></figure><p>直接激活就行</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;1、下载安装IntelliJ-IDEA&quot;&gt;&lt;a href=&quot;#1、下载安装IntelliJ-IDEA&quot; class=&quot;headerlink&quot; title=&quot;1、下载安装IntelliJ IDEA&quot;&gt;&lt;/a&gt;1、下载安装IntelliJ IDEA&lt;/h1&gt;&lt;h1 i
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>数学建模培训之现代优化算法作业</title>
@@ -448,29 +470,6 @@
       <category term="C&amp;&amp;C++" scheme="http://Luweir.github.io/tags/C-C/"/>
     
       <category term="面试" scheme="http://Luweir.github.io/tags/%E9%9D%A2%E8%AF%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>tacoyu23的建站史</title>
-    <link href="http://luweir.github.io/2020/06/28/tacoyu%E7%9A%84%E5%BB%BA%E7%AB%99%E5%8F%B2/"/>
-    <id>http://luweir.github.io/2020/06/28/tacoyu%E7%9A%84%E5%BB%BA%E7%AB%99%E5%8F%B2/</id>
-    <published>2020-06-28T12:20:12.000Z</published>
-    <updated>2020-06-30T14:00:20.936Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="2020-6-27-初学Github"><a href="#2020-6-27-初学Github" class="headerlink" title="2020/6/27 初学Github"></a>2020/6/27 初学Github</h1><ol><li><p>因为在线试衣系统以及以后做项目的需要，花了将近六个小时熟悉传说中的Github；</p></li><li><p>对自己的Github进行修改，并创建 .github.io博客；</p></li></ol><h1 id="2020-6-28-博客初成"><a href="#2020-6-28-博客初成" class="headerlink" title="2020/6/28 博客初成"></a>2020/6/28 博客初成</h1><ol><li><p>在CSDN上找资料，学习使用Git命令以及Hexo；</p></li><li><p>Github上使用Hexo配置初始的next主题；</p></li><li><p>使用next第四个主题，调暗模式，把开始的两篇文章传上去；</p></li><li><p>打开并正确使用标签、分类，设置图像、链接以及打赏功能；</p></li></ol><h1 id="2020-6-29-博客基本完善"><a href="#2020-6-29-博客基本完善" class="headerlink" title="2020/6/29 博客基本完善"></a>2020/6/29 博客基本完善</h1><ol><li><p>增加了一些新功能，比如动态背景、加入fork Github图标(虽然这个基本用不着，哈哈)；</p></li><li><p>增加了评论啊、统计等功能，不过还是有两个没配置成功，新版和旧版的区别还是挺大的，网上大多是旧版的教程；</p></li></ol><p>这个熟能生巧，慢慢摸索着前进吧！</p><h1 id="2020-6-30-完善博客"><a href="#2020-6-30-完善博客" class="headerlink" title="2020/6/30 完善博客"></a>2020/6/30 完善博客</h1><ol><li>改了下主页透明度、上传了一些以前写过的文章，哈哈哈！剩下的懒得传了，以后再说吧；</li><li>调整了一下距离，本来准备把主页摘要框框弄个正方形的，发现不好看，又调回去了；</li><li>估计博客暂时就这样了，还勉强吧，哈哈哈！</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      博客搭建的心路历程
-    
-    </summary>
-    
-    
-      <category term="Privacy" scheme="http://Luweir.github.io/categories/Privacy/"/>
-    
-    
-      <category term="记录" scheme="http://Luweir.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
