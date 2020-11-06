@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>picgo+github+typora搭建免费图床</title>
+      <link href="/2020/11/06/picgo+github+typora/"/>
+      <url>/2020/11/06/picgo+github+typora/</url>
+      
+        <content type="html"><![CDATA[<p>前面的步骤依旧没啥变化，Github创建仓库、获取token等等；</p><h1 id="新版本变化"><a href="#新版本变化" class="headerlink" title="新版本变化"></a>新版本变化</h1><p>那么直接从PicGo中Github设置说起：</p><p><img src="https://raw.githubusercontent.com/Luweir/picpicgo/main/img/20201106232010.png" alt=""></p><p>还是加上自定义域名吧，建议：<code>https://raw.githubusercontent.com/用户名/仓库名</code>；</p><p>然后就可以直接上传了，建议设置改为以下：</p><p><img src="https://raw.githubusercontent.com/Luweir/picpicgo/main/img/20201106232352.png" alt=""></p><p>还有就是快捷键也可以更改下，我改成的<code>ctrl+u</code>；</p><h1 id="提高Github图片加载速度"><a href="#提高Github图片加载速度" class="headerlink" title="提高Github图片加载速度"></a>提高Github图片加载速度</h1><p>设置完成后，上传没问题了，只是这个图片在github中经常加载不出来，自然复制链接到 Typora 也是经常加载不出，很蛋疼，参考知乎一篇文章：<a href="https://zhuanlan.zhihu.com/p/139219691" target="_blank" rel="noopener">GitHub 图片加载不出来怎么办</a></p><p>更改 host 文件（之前也改过，不知道为啥没用了），在最后面加上这些，亲测有用：</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># GitHub Start </span><br><span class="line"><span class="number">192.30</span><span class="number">.253</span><span class="number">.112</span> Build software better, together </span><br><span class="line"><span class="number">192.30</span><span class="number">.253</span><span class="number">.119</span> gist.github.com</span><br><span class="line"><span class="number">151.101</span><span class="number">.184</span><span class="number">.133</span> assets-cdn.github.com</span><br><span class="line"><span class="number">151.101</span><span class="number">.184</span><span class="number">.133</span> raw.githubusercontent.com</span><br><span class="line"><span class="number">151.101</span><span class="number">.184</span><span class="number">.133</span> gist.githubusercontent.com</span><br><span class="line"><span class="number">151.101</span><span class="number">.184</span><span class="number">.133</span> cloud.githubusercontent.com</span><br><span class="line"><span class="number">151.101</span><span class="number">.184</span><span class="number">.133</span> camo.githubusercontent.com</span><br><span class="line"><span class="number">151.101</span><span class="number">.184</span><span class="number">.133</span> avatars0.githubusercontent.com</span><br><span class="line"><span class="number">151.101</span><span class="number">.184</span><span class="number">.133</span> avatars1.githubusercontent.com</span><br><span class="line"><span class="number">151.101</span><span class="number">.184</span><span class="number">.133</span> avatars2.githubusercontent.com</span><br><span class="line"><span class="number">151.101</span><span class="number">.184</span><span class="number">.133</span> avatars3.githubusercontent.com</span><br><span class="line"><span class="number">151.101</span><span class="number">.184</span><span class="number">.133</span> Build software better, together</span><br><span class="line"><span class="number">151.101</span><span class="number">.184</span><span class="number">.133</span> avatars5.githubusercontent.com</span><br><span class="line"><span class="number">151.101</span><span class="number">.184</span><span class="number">.133</span> avatars6.githubusercontent.com</span><br><span class="line"><span class="number">151.101</span><span class="number">.184</span><span class="number">.133</span> avatars7.githubusercontent.com</span><br><span class="line"><span class="number">151.101</span><span class="number">.184</span><span class="number">.133</span> Build software better, together</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/Luweir/picpicgo/main/img/20201106233404.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 环境配置 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+            <tag> PicGo </tag>
+            
+            <tag> Typora </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>帮朋友看电脑有感</title>
+      <link href="/2020/08/30/%E5%B8%AE%E6%9C%8B%E5%8F%8B%E7%9C%8B%E7%94%B5%E8%84%91%E6%9C%89%E6%84%9F/"/>
+      <url>/2020/08/30/%E5%B8%AE%E6%9C%8B%E5%8F%8B%E7%9C%8B%E7%94%B5%E8%84%91%E6%9C%89%E6%84%9F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1、处理器"><a href="#1、处理器" class="headerlink" title="1、处理器"></a>1、处理器</h1><p>​        2020年 AMD Yes!  R7 4800H明显优过i7 10730，与10800不相上下；其次，在intel处理器中，i7也不一定比i5厉害，比如i7 4代就不如i5 十代，i7 4000 比如 i7 4200；对于AMD和intel两大厂商，intel常年居龙头位置，靠着先进的技术碾压AMD，但由于其每次进步较小，AMD与它的差距也就越来越小；不过我这神州也才i5 7400，要啥自行车啊；玩lol、吃鸡没压力，ps、pr、pycharm也不在话下，四年也没出过岔子，在我心中，神州确实还算性价比很高、很不错的机子；</p><p>​        下一个电脑暂定试试AMD系列的处理器，体验体验；</p><p><img src="https://raw.githubusercontent.com/Luweir/picpicgo/main/img/20201106230842.png" alt="image-20200830224522367"></p><h1 id="2、集成显卡"><a href="#2、集成显卡" class="headerlink" title="2、集成显卡"></a>2、集成显卡</h1><p>冲2060不如稳1660Ti，性能差别，价格却相差很大；对于<strong>华硕的天选</strong>，同其它配置的2060超出1660Ti达500块钱，感觉还是可以不冲的！</p><p><img src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/42d8ea246b600c336215f95b144c510fd8f9a174.jpg" alt="img"></p><p>不过对于我的GTX1050，已经在图上都不标的显卡，我无fuck说，哈哈哈哈 开玩笑的，还是挺满意的，这些高端配置于我而言，感觉很多时候用不上；</p><h1 id="3、硬盘"><a href="#3、硬盘" class="headerlink" title="3、硬盘"></a>3、硬盘</h1><p>512G固态也够了，现在大多也就这配置；再自己加一个1T的硬盘也没问题咯；</p><h1 id="4、色域"><a href="#4、色域" class="headerlink" title="4、色域"></a>4、色域</h1><p>这是今天的重点，第一次了解到色域的概念；大概就是屏幕颜色的饱和度吧；一般有45&lt;60&lt;72三个版本，当然还有更猛的；没有对比就没有伤害，从没觉得我的45色域有个不妥，但贴吧上都说，看见了72色域的，在看45色域的会晕、会吐；下一个笔记本就试试72色域的；</p><h1 id="5、刷新率"><a href="#5、刷新率" class="headerlink" title="5、刷新率"></a>5、刷新率</h1><p>刷新率现在有144Hz的，不过应当不影响，或者看不出啥，我的应该是60Hz；</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Privacy </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 记录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>学习前端</title>
       <link href="/2020/08/15/%E5%AD%A6%E4%B9%A0%E5%89%8D%E7%AB%AF/"/>
       <url>/2020/08/15/%E5%AD%A6%E4%B9%A0%E5%89%8D%E7%AB%AF/</url>
@@ -187,7 +241,7 @@
       <link href="/2020/07/04/Mr.L%E7%9A%84%E5%B7%A5%E5%85%B7%E6%A0%8F/"/>
       <url>/2020/07/04/Mr.L%E7%9A%84%E5%B7%A5%E5%85%B7%E6%A0%8F/</url>
       
-        <content type="html"><![CDATA[<h1 id="一、初始必备"><a href="#一、初始必备" class="headerlink" title="一、初始必备"></a>一、初始必备</h1><p>1、百度云</p><p>各种软件、电子书、教程都存在百度云！</p><p>2、Google浏览器 + 书签 + 相关插件</p><p>时常备份百度云书签以及插件、换设备时不用重新开始；</p><p>3、清理工具：Ccleaner</p><p>麻雀虽小、五脏俱全，清理强大，无广告！</p><p>4、文件搜索工具：Everything</p><p>速度是自带搜索的n倍以上</p><h1 id="二、文档类工具"><a href="#二、文档类工具" class="headerlink" title="二、文档类工具"></a>二、文档类工具</h1><p>1、WPS </p><p>各设备平台同步，超大云空间；</p><p><strong>文档阅读、标注都在云文档上完成</strong>，方便同步；不要保存在本地(除非要发送至他人)！</p><p>2、Office 2016 </p><p>写论文啥的要用word，比wps稳定；</p><p>3、Typora + PicGo </p><p>写markdown文档以及图床工具(使用的阿里云)；</p><p>4、Subline Text3 </p><p>查看各种类型的代码；</p><p>5、Xmind</p><p>构件思维导图；</p><h1 id="三、编程类工具"><a href="#三、编程类工具" class="headerlink" title="三、编程类工具"></a>三、编程类工具</h1><p>1、Vscode</p><p>暂且用它来刷Leetcode等算法题；轻便、五脏俱全；</p><p>2、pycharm</p><p>3、Anaconda</p><p>4、IntelliJ IDEA</p><p>5、Matlab</p><p>6、Git</p><h1 id="四、剪辑类工具"><a href="#四、剪辑类工具" class="headerlink" title="四、剪辑类工具"></a>四、剪辑类工具</h1><p>1、PS</p><p>2、PR</p><h1 id="五、其它工具"><a href="#五、其它工具" class="headerlink" title="五、其它工具"></a>五、其它工具</h1><p>1、To Do</p><p>任务清单神奇、Windows多平台同步；</p><p>2、Fiddler</p><p>抓包神器，抓一些网站上的视频啥的；</p><p>3、Mathpix Snipping </p><p>截图识别公式，直接粘贴在文档中</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="一、初始必备"><a href="#一、初始必备" class="headerlink" title="一、初始必备"></a>一、初始必备</h1><p>1、百度云</p><p>各种软件、电子书、教程都存在百度云！</p><p>2、Google浏览器 + 书签 + 相关插件</p><p>时常备份百度云书签以及插件、换设备时不用重新开始；</p><p>3、清理工具：Ccleaner</p><p>麻雀虽小、五脏俱全，清理强大，无广告！</p><p>4、文件搜索工具：Everything</p><p>速度是自带搜索的n倍以上</p><h1 id="二、文档类工具"><a href="#二、文档类工具" class="headerlink" title="二、文档类工具"></a>二、文档类工具</h1><p>1、WPS </p><p>各设备平台同步，超大云空间；</p><p><strong>文档阅读、标注都在云文档上完成</strong>，方便同步；不要保存在本地(除非要发送至他人)！</p><p>2、Office 2016 </p><p>写论文啥的要用word，比wps稳定；</p><p>3、Typora + PicGo </p><p>写markdown文档以及图床工具(使用的阿里云)；</p><p>4、Subline Text3 </p><p>查看各种类型的代码；</p><p>5、Xmind</p><p>构件思维导图；</p><h1 id="三、编程类工具"><a href="#三、编程类工具" class="headerlink" title="三、编程类工具"></a>三、编程类工具</h1><p>1、Vscode</p><p>暂且用它来刷Leetcode等算法题；轻便、五脏俱全；</p><p>2、pycharm</p><p>3、Anaconda</p><p>4、IntelliJ IDEA</p><p>5、Matlab</p><p>6、Git</p><h1 id="四、剪辑类工具"><a href="#四、剪辑类工具" class="headerlink" title="四、剪辑类工具"></a>四、剪辑类工具</h1><p>1、PS</p><p>2、PR</p><h1 id="五、其它工具"><a href="#五、其它工具" class="headerlink" title="五、其它工具"></a>五、其它工具</h1><p>1、To Do</p><p>任务清单神奇、Windows多平台同步；</p><p>2、Fiddler</p><p>抓包神器，抓一些网站上的视频啥的；</p><p>3、Mathpix Snipping </p><p>截图识别公式，直接粘贴在文档中</p><h1 id="六、耳机"><a href="#六、耳机" class="headerlink" title="六、耳机"></a>六、耳机</h1><p>1、有线耳机– 索尼MH750</p><p>2、无线耳机–Airpods</p>]]></content>
       
       
       <categories>
