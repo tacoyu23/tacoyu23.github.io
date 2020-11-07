@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-center-atom.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"luweir.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":240,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":10,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="1、OSI ， TCP&#x2F;IP ，五层协议的体系结构OSI分层（7层） ：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层。  TCP&#x2F;IP分层（4层） ：网络接口层、网际层、运输层、应用层。  五层协议（5层） ：物理层、数据链路层、网络层、运输层、应用层。  每一层的作用如下 ：  物理层：激活、维持、关闭通信端点之间的机械特性、电气特性、功能特性以及过程特性。该层为上层协议提供了一个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络常见面试题总结">
+<meta property="og:url" content="http://luweir.github.io/2020/11/07/%E8%AE%A1%E7%BD%91%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="Luweir&#39;Blog">
+<meta property="og:description" content="1、OSI ， TCP&#x2F;IP ，五层协议的体系结构OSI分层（7层） ：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层。  TCP&#x2F;IP分层（4层） ：网络接口层、网际层、运输层、应用层。  五层协议（5层） ：物理层、数据链路层、网络层、运输层、应用层。  每一层的作用如下 ：  物理层：激活、维持、关闭通信端点之间的机械特性、电气特性、功能特性以及过程特性。该层为上层协议提供了一个">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/luweir/picpicgo/main/img/20201107231632.jpg">
+<meta property="article:published_time" content="2020-11-07T15:20:00.000Z">
+<meta property="article:modified_time" content="2020-11-07T15:53:29.927Z">
+<meta property="article:author" content="Mr.L">
+<meta property="article:tag" content="CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/luweir/picpicgo/main/img/20201107231632.jpg">
+
+<link rel="canonical" href="http://luweir.github.io/2020/11/07/%E8%AE%A1%E7%BD%91%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>计算机网络常见面试题总结 | Luweir'Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Luweir'Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+    <a href="https://github.com/tacoyu23" target="_blank" rel="noopener" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Luweir'Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一旦你知道失败是什么感觉，就会决心追逐成功！</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">21</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">9</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">28</span></a>
+
+  </li>
+        <li class="menu-item menu-item-resources">
+
+    <a href="/resources/" rel="section"><i class="fa fa-download fa-fw"></i>资源</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://luweir.github.io/2020/11/07/%E8%AE%A1%E7%BD%91%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/未标题-1.png">
+      <meta itemprop="name" content="Mr.L">
+      <meta itemprop="description" content="坚持自己所坚持！热爱自己所热爱！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Luweir'Blog">
+    </span>
+
+    <span class="fa fa-file-word" title="post.wordcount">
+    字数统计 :  3.6k 字 |
+    </span>
+
+    <span class="fa fa-clock" title="post.min2read">
+    阅读时长 ≈ 13 分钟
+ 	</span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          计算机网络常见面试题总结
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-11-07 23:20:00" itemprop="dateCreated datePublished" datetime="2020-11-07T23:20:00+08:00">2020-11-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-07 23:53:29" itemprop="dateModified" datetime="2020-11-07T23:53:29+08:00">2020-11-07</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">面试</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2020/11/07/%E8%AE%A1%E7%BD%91%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/11/07/%E8%AE%A1%E7%BD%91%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="1、OSI-，-TCP-IP-，五层协议的体系结构"><a href="#1、OSI-，-TCP-IP-，五层协议的体系结构" class="headerlink" title="1、OSI ， TCP/IP ，五层协议的体系结构"></a>1、OSI ， TCP/IP ，五层协议的体系结构</h2><p>OSI分层（7层） ：物理层、数据链路层、网络层、传输层、会话层、表示层、应用层。 </p>
+<p>TCP/IP分层（4层） ：网络接口层、网际层、运输层、应用层。 </p>
+<p>五层协议（5层） ：物理层、数据链路层、网络层、运输层、应用层。 </p>
+<p>每一层的作用如下 ： </p>
+<p><strong>物理层</strong>：激活、维持、关闭通信端点之间的机械特性、电气特性、功能特性以及过程特性。该层为上层协议提供了一个传输数据的物理媒体。</p>
+<p><strong>数据链路层</strong> ：数据链路层在不可靠的物理介质上提供可靠的传输。该层的作用包括：物理地址寻址、数据的成帧、流量控制、数据的检错、重发等。 </p>
+<p><strong>网络层</strong> ：网络层负责对子网间的数据包进行路由选择。此外，网络层还可以实现拥塞控制、网际互连等功能。 </p>
+<p><strong>传输层</strong> ：第一个端到端，即主机到主机的层次。传输层负责将上层数据分段并提供端到端的、可靠的或不可靠的传输。此外，传输层还要处理端到端的差错控制和流量控制问题。 </p>
+<p><strong>会话层</strong> ：会话层管理主机之间的会话进程，即负责建立、管理、终止进程之间的会话。会话层还利用在数据中插入校验点来实现数据的同步。 </p>
+<p><strong>表示层</strong> ：表示层对上层数据或信息进行变换以保证一个主机应用层信息可以被另一个主机的应用程序理解。表示层的数据转换包括数据的加密、压缩、格式转换等。 </p>
+<p><strong>应用层</strong> ：为操作系统或网络应用程序提供访问网络服务的接口。 <a id="more"></a></p>
+<h2 id="2、IP-地址的分类"><a href="#2、IP-地址的分类" class="headerlink" title="2、IP 地址的分类"></a>2、IP 地址的分类</h2><p><strong>A类地址</strong>：以0开头，第一个字节范围：0~127；</p>
+<p><strong>B类地址</strong>：以10开头，第一个字节范围：128~191；</p>
+<p><strong>C类地址</strong>：以110开头，第一个字节范围：192~223；</p>
+<p><strong>D类地址</strong>：以1110开头，第一个字节范围：224~239；</p>
+<h2 id="3、ARP-协议的工作原理"><a href="#3、ARP-协议的工作原理" class="headerlink" title="3、ARP 协议的工作原理"></a>3、ARP 协议的工作原理</h2><p>​        首先，每台主机都会在自己的ARP缓冲区中建立一个 ARP列表，以表示IP地址和MAC地址的对应关系。当源主机需要将一个数据包要发送到目的主机时，会首先检查自己 ARP列表中是否存在该 IP地址对应的MAC地址，如果有，就直接将数据包发送到这个MAC地址；如果没有，就向本地网段发起一个ARP请求的广播包，查询此目的主机对应的MAC地址。此ARP请求数据包里包括源主机的IP地址、硬件地址、以及目的主机的IP地址。网络中所有的主机收到这个ARP请求后，会检查数据包中的目的IP是否和自己的IP地址一致。如果不相同就忽略此数据包；如果相同，该主机首先将发送端的MAC地址和IP地址添加到自己的ARP列表中，如果ARP表中已经存在该IP的信息，则将其覆盖，然后给源主机发送一个 ARP响应数据包，告诉对方自己是它需要查找的MAC地址；源主机收到这个ARP响应数据包后，将得到的目的主机的IP地址和MAC地址添加到自己的ARP列表中，并利用此信息开始数据的传输。如果源主机一直没有收到ARP响应数据包，表示ARP查询失败。</p>
+<h2 id="4、路由设备与相关层"><a href="#4、路由设备与相关层" class="headerlink" title="4、路由设备与相关层"></a>4、路由设备与相关层</h2><p>物理层 ：中继器（Repeater，也叫放大器），集线器。 </p>
+<p>数据链路层 ：网桥，交换机。 </p>
+<p>网络层 ：路由器。 </p>
+<p>网关 ：网络层以上的设备。 </p>
+<h2 id="5、常见的路由选择协议，以及它们的区别"><a href="#5、常见的路由选择协议，以及它们的区别" class="headerlink" title="5、常见的路由选择协议，以及它们的区别"></a>5、常见的路由选择协议，以及它们的区别</h2><p>常见的路由选择协议有：RIP协议、OSPF协议。</p>
+<p>RIP协议 ：底层是贝尔曼福特算法，它选择路由的度量标准（metric)是跳数，最大跳数是15跳，如果大于15跳，它就会丢弃数据包。 </p>
+<p>OSPF协议 ：底层是迪杰斯特拉算法，是链路状态路由选择协议，它选择路由的度量标准是带宽，延迟。 </p>
+<h2 id="6、TCP-与-UDP-的区别"><a href="#6、TCP-与-UDP-的区别" class="headerlink" title="6、TCP 与 UDP 的区别"></a>6、TCP 与 UDP 的区别</h2><p>UDP是面向无连接的，不可靠的数据报服务；</p>
+<p>TCP是面向连接的，可靠的字节流服务。</p>
+<h2 id="7、TCP-的可靠性如何保证？"><a href="#7、TCP-的可靠性如何保证？" class="headerlink" title="7、TCP 的可靠性如何保证？"></a>7、TCP 的可靠性如何保证？</h2><p>TCP的可靠性是通过顺序编号和确认（ACK）来实现的。</p>
+<h2 id="8、TCP-三次握手和四次挥手的全过程"><a href="#8、TCP-三次握手和四次挥手的全过程" class="headerlink" title="8、TCP 三次握手和四次挥手的全过程"></a>8、TCP 三次握手和四次挥手的全过程</h2><p><img src="https://raw.githubusercontent.com/luweir/picpicgo/main/img/20201107231632.jpg" alt="img"></p>
+<h2 id="9、-在浏览器中输入-www-baidu-com-后执行的全部过程"><a href="#9、-在浏览器中输入-www-baidu-com-后执行的全部过程" class="headerlink" title="9、 在浏览器中输入** www.baidu.com **后执行的全部过程"></a>9、 在浏览器中输入** <code>www.baidu.com</code> **后执行的全部过程</h2><p>现在假设如果我们在客户端（客户端）浏览器中输入<code>http://www.baidu.com</code>，而<code>baidu.com</code>为要访问的服务器（服务器），下面详细分析客户端为了访问服务器而执行的一系列关于协议的操作：</p>
+<p>1）客户端浏览器通过DNS解析到<code>www.baidu.com</code>的IP地址220.181.27.48，通过这个IP地址找到客户端到服务器的路径。客户端浏览器发起一个HTTP会话到220.161.27.48，然后通过TCP进行封装数据包，输入到网络层。</p>
+<p>2）在客户端的传输层，把HTTP会话请求分成报文段，添加源和目的端口，如服务器使用80端口监听客户端的请求，客户端由系统随机选择一个端口如5000，与服务器进行交换，服务器把相应的请求返回给客户端的5000端口。然后使用IP层的IP地址查找目的端。</p>
+<p>3）客户端的网络层不用关系应用层或者传输层的东西，主要做的是通过查找路由表确定如何到达服务器，期间可能经过多个路由器，这些都是由路由器来完成的工作，我不作过多的描述，无非就是通过查找路由表决定通过那个路径到达服务器。</p>
+<p>4）客户端的链路层，包通过链路层发送到路由器，通过邻居协议查找给定IP地址的MAC地址，然后发送ARP请求查找目的地址，如果得到回应后就可以使用ARP的请求应答交换的IP数据包现在就可以传输了，然后发送IP数据包到达服务器的地址。</p>
+<h2 id="10、-HTTP-协议包括哪些请求？"><a href="#10、-HTTP-协议包括哪些请求？" class="headerlink" title="10、 HTTP 协议包括哪些请求？"></a>10、 HTTP 协议包括哪些请求？</h2><p>GET：请求读取由URL所标志的信息。</p>
+<p>POST：给服务器添加信息（如注释）。</p>
+<p>PUT：在给定的URL下存储一个文档。</p>
+<p>DELETE：删除给定的URL所标志的资源。</p>
+<h2 id="11、HTTP-中，-POST-与-GET-的区别"><a href="#11、HTTP-中，-POST-与-GET-的区别" class="headerlink" title="11、HTTP 中， POST 与 GET 的区别"></a>11、HTTP 中， POST 与 GET 的区别</h2><p>(1)Get是从服务器上获取数据，Post是向服务器传送数据。</p>
+<p>(2)Get是把参数数据队列加到提交表单的Action属性所指向的URL中，值和表单内各个字段一一对应，在URL中科院看到。</p>
+<p>(3)Get传送的数据量小，不能大于2KB；post传送的数据量较大，一般被默认为不受限制。</p>
+<p>(4)根据HTTP规范，GET用于信息获取，而且应该是安全的和幂等的。</p>
+<p>I.所谓 安全的 意味着该操作用于获取信息而非修改信息。换句话说，GET 请求一般不应产生副作用。就是说，它仅仅是获取资源信息，就像数据库查询一样，不会修改，增加数据，不会影响资源的状态。 </p>
+<p>II. 幂等 的意味着对同一URL的多个请求应该返回同样的结果。 </p>
+<h2 id="12、TCP-IP-中，每一层对应的协议"><a href="#12、TCP-IP-中，每一层对应的协议" class="headerlink" title="12、TCP/IP 中，每一层对应的协议"></a>12、TCP/IP 中，每一层对应的协议</h2><p>网络层 ：IP协议、ICMP协议、ARP协议、RARP协议。 </p>
+<p>传输层 ：UDP协议、TCP协议。 </p>
+<p>应用层 ：FTP（文件传送协议）、Telenet（远程登录协议）、DNS（域名解析协议）、SMTP（邮件传送协议），POP3协议（邮局协议），HTTP协议。 </p>
+<h2 id="13、TCP-对应的协议和-UDP-对应的协议"><a href="#13、TCP-对应的协议和-UDP-对应的协议" class="headerlink" title="13、TCP 对应的协议和 UDP 对应的协议"></a>13、TCP 对应的协议和 UDP 对应的协议</h2><p>TCP对应的协议：</p>
+<p>（1） FTP ：定义了文件传输协议，使用21端口。常说某某计算机开了FTP服务便是启动了文件传输服务。下载文件，上传主页，都要用到FTP服务。 </p>
+<p>（2） Telnet ：它是一种用于远程登陆的端口，用户可以以自己的身份远程连接到计算机上，通过这种端口可以提供一种基于DOS模式下的通信服务。如以前的BBS是-纯字符界面的，支持BBS的服务器将23端口打开，对外提供服务。 </p>
+<p>（3） SMTP ：定义了简单邮件传送协议，现在很多邮件服务器都用的是这个协议，用于发送邮件。如常见的免费邮件服务中用的就是这个邮件服务端口，所以在电子邮件设置-中常看到有这么SMTP端口设置这个栏，服务器开放的是25号端口。 </p>
+<p>（4） POP3 ：它是和SMTP对应，POP3用于接收邮件。通常情况下，POP3协议所用的是110端口。也是说，只要你有相应的使用POP3协议的程序（例如Fo-xmail或Outlook），就可以不以Web方式登陆进邮箱界面，直接用邮件程序就可以收到邮件（如是163邮箱就没有必要先进入网易网站，再进入自己的邮-箱来收信）。 </p>
+<p>（5）HTTP协议： 是从 Web 服务器传输超文本到本地浏览器的传送协议。</p>
+<p>UDP对应的协议：</p>
+<p>（1） DNS ：用于域名解析服务，将域名地址转换为IP地址。DNS用的是53号端口。 </p>
+<p>（2） SNMP ：简单网络管理协议，使用161号端口，是用来管理网络设备的。由于网络设备很多，无连接的服务就体现出其优势。 </p>
+<p>（3） TFTP (Trival File Transfer Protocal)，简单文件传输协议，该协议在熟知端口69上使用UDP服务。 </p>
+<h2 id="14、特殊的IP地址"><a href="#14、特殊的IP地址" class="headerlink" title="14、特殊的IP地址"></a>14、特殊的IP地址</h2><p>（1）网络地址</p>
+<p>IP地址由网络号（包括子网号）和主机号组成，网络地址的主机号为全0，网络地址代表着整个网络。</p>
+<p>（2）广播地址</p>
+<p>广播地址通常称为直接广播地址，是为了区分受限广播地址。</p>
+<p>广播地址与网络地址的主机号正好相反，广播地址中，主机号为全1。当向某个网络的广播地址发送消息时，该网络内的所有主机都能收到该广播消息。</p>
+<p>（3）组播地址</p>
+<p>D类地址就是组播地址。</p>
+<p>先回忆下A，B，C，D类地址吧</p>
+<p>A类地址以00开头，第一个字节作为网络号，地址范围为：0.0.0.0~127.255.255.255；</p>
+<p>B类地址以10开头，前两个字节作为网络号，地址范围是：128.0.0.0~191.255.255.255;</p>
+<p>C类地址以110开头，前三个字节作为网络号，地址范围是：192.0.0.0~223.255.255.255。</p>
+<p>D类地址以1110开头，地址范围是224.0.0.0~239.255.255.255，D类地址作为组播地址（一对多的通信）；</p>
+<p>E类地址以1111开头，地址范围是240.0.0.0~255.255.255.255，E类地址为保留地址，供以后使用。</p>
+<p>Notice：只有A,B,C有网络号和主机号之分，D类地址和E类地址没有划分网络号和主机号。</p>
+<p>（4）255.255.255.255</p>
+<p>该IP地址指的是受限的广播地址。受限广播地址与一般广播地址（直接广播地址）的区别在于，受限广播地址之只能用于本地网络，路由器不会转发以受限广播地址为目的地址的分组；一般广播地址既可在本地广播，也可跨网段广播。例如：主机192.168.1.1/30上的直接广播数据包后，另外一个网段192.168.1.5/30也能收到该数据报；若发送受限广播数据报，则不能收到。</p>
+<p>Notice：一般的广播地址（直接广播地址）能够通过某些路由器（当然不是所有的路由器），而受限的广播地址不能通过路由器。</p>
+<p>（5）0.0.0.0</p>
+<p>常用于寻找自己的IP地址，例如在我们的 RARP，BOOTP（DHCP协议的前身）和DHCP协议中，若某个未知IP地址的无盘机想要知道自己的IP地址，它就以255.255.255.255为目的地址，向本地范围（具体而言是被各个路由器屏蔽的范围内）的服务器发送IP请求分组。</p>
+<p>（6）回环地址</p>
+<p>127.0.0.0/8 被用作回环地址，回环地址表示本机的地址，常用于对本机的测试，用的最多的是127.0.0.1。</p>
+<p>（7）A、B、C类私有地址</p>
+<p>私有地址(private address)也叫专用地址，它们不会在全球使用，只具有本地意义。</p>
+<p>A类私有地址：10.0.0.0/8，范围是：10.0.0.0~10.255.255.255</p>
+<p>B类私有地址：172.16.0.0/12，范围是：172.16.0.0~172.31.255.255</p>
+<p>C类私有地址：192.168.0.0/16，范围是：192.168.0.0~192.168.255.255</p>
+<h2 id="15、-NAT-协议、-DHCP-协议、-DNS-协议的作用"><a href="#15、-NAT-协议、-DHCP-协议、-DNS-协议的作用" class="headerlink" title="15、 NAT 协议、 DHCP 协议、 DNS 协议的作用"></a>15、 NAT 协议、 DHCP 协议、 DNS 协议的作用</h2><p>NAT协议 ：网络地址转换(NAT,Network Address Translation)属接入广域网(WAN)技术， </p>
+<p>是一种将私有（保留）地址转化为合法IP地址的转换技术，它被广泛应用于各种类型Internet接入方式和各种类型的网络中。原因很简单，NAT不仅完美地解决了lP地址不足的问题，而且还能够有效地避免来自网络外部的攻击，隐藏并保护网络内部的计算机。</p>
+<p>DHCP协议 ：动态主机设置协议（Dynamic Host Configuration Protocol, DHCP） </p>
+<p>是一个局域网的网络协议，使用UDP协议工作，主要有两个用途：给内部网络或网络服务供应商自动分配IP地址，给用户或者内部网络管理员作为对所有计算机作中央管理的手段。</p>
+<p>DNS协议 ：DNS 是域名系统 (Domain Name System) 的缩写，是因特网的一项核心服务，它作为可以将域名和IP地址相互映射的一个分布式数据库，能够使人更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。</p>
+<h2 id="参考链接："><a href="#参考链接：" class="headerlink" title="参考链接："></a>参考链接：</h2><p><a href="https://mp.weixin.qq.com/s/qO8ZismodyFi4Xv70akh_g" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/qO8ZismodyFi4Xv70akh_g</a></p>
+
+    </div>
+
+    
+    
+    
+      
+
+        <div class="reward-container">
+  <div>You can reward me here. Thank you!</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="Mr.L 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Mr.L 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Mr.L
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://luweir.github.io/2020/11/07/%E8%AE%A1%E7%BD%91%E9%9D%A2%E8%AF%95%E9%A2%98%E6%80%BB%E7%BB%93/" title="计算机网络常见面试题总结">http://luweir.github.io/2020/11/07/计网面试题总结/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/CN/" rel="tag"><i class="fa fa-tag"></i> CN</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/11/07/Windows%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%84%9A%E6%9C%AC%E5%AD%A6%E4%B9%A0/" rel="prev" title="Windows命令行脚本学习">
+      <i class="fa fa-chevron-left"></i> Windows命令行脚本学习
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、OSI-，-TCP-IP-，五层协议的体系结构"><span class="nav-text">1、OSI ， TCP&#x2F;IP ，五层协议的体系结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、IP-地址的分类"><span class="nav-text">2、IP 地址的分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、ARP-协议的工作原理"><span class="nav-text">3、ARP 协议的工作原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、路由设备与相关层"><span class="nav-text">4、路由设备与相关层</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、常见的路由选择协议，以及它们的区别"><span class="nav-text">5、常见的路由选择协议，以及它们的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、TCP-与-UDP-的区别"><span class="nav-text">6、TCP 与 UDP 的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7、TCP-的可靠性如何保证？"><span class="nav-text">7、TCP 的可靠性如何保证？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8、TCP-三次握手和四次挥手的全过程"><span class="nav-text">8、TCP 三次握手和四次挥手的全过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9、-在浏览器中输入-www-baidu-com-后执行的全部过程"><span class="nav-text">9、 在浏览器中输入** www.baidu.com **后执行的全部过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10、-HTTP-协议包括哪些请求？"><span class="nav-text">10、 HTTP 协议包括哪些请求？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11、HTTP-中，-POST-与-GET-的区别"><span class="nav-text">11、HTTP 中， POST 与 GET 的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12、TCP-IP-中，每一层对应的协议"><span class="nav-text">12、TCP&#x2F;IP 中，每一层对应的协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13、TCP-对应的协议和-UDP-对应的协议"><span class="nav-text">13、TCP 对应的协议和 UDP 对应的协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14、特殊的IP地址"><span class="nav-text">14、特殊的IP地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15、-NAT-协议、-DHCP-协议、-DNS-协议的作用"><span class="nav-text">15、 NAT 协议、 DHCP 协议、 DNS 协议的作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考链接："><span class="nav-text">参考链接：</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Mr.L"
+      src="https://tacotuesdayyy.oss-cn-shenzhen.aliyuncs.com/umg/未标题-1.png">
+  <p class="site-author-name" itemprop="name">Mr.L</p>
+  <div class="site-description" itemprop="description">坚持自己所坚持！热爱自己所热爱！</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">28</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Luweir" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Luweir" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/463047622@qq.com" title="E-Mail → 463047622@qq.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/3708965564/profile?topnav=1&wvr=6" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;3708965564&#x2F;profile?topnav&#x3D;1&amp;wvr&#x3D;6" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://blog.csdn.net/wyll19980812" title="https:&#x2F;&#x2F;blog.csdn.net&#x2F;wyll19980812" rel="noopener" target="_blank">Luweir's CSDN</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Mr.L</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/canvas_lines.min.js"></script>
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'VcFjReOVbkfKap6tylFW8d5V-gzGzoHsz',
+      appKey     : 'p2biokb0TmayMIoXING3pTHy',
+      placeholder: "Please write your suggestion!",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+  
+</body>
+</html>
